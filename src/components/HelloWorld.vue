@@ -9,16 +9,24 @@
         理专业 2+2 中德双学位专业（英语授课），与美国纽约州立大学
         普拉茨堡分校、新西兰马努卡理工学院、美国普莱斯比学院、法
         国东部克雷戴尔大学、英国赫特福德大学、英国南威尔士大学合
-        作开设国际经济与贸易2+2 中外双学位专业。<br>
+        作开设国际经济与贸易2+2 中外双学位专业。<br><br>
         学生第一学年、第二学年在浙江万里学院学习，第三学年、第四
         学年在国外合作大学学习，毕业可同时获得浙江万里学院本科学
         历证书、学士学位证书和国外合作大学学士学位证书。</p>
       <img class="qrcode animate" data-ani="rotateInUpRight" data-delay="2500" src="../assets/images/qqcode.png" alt="">
       <img class="qrcode animate" data-ani="rotateInUpRight" data-delay="2500" src="../assets/images/wccode.png" alt="">
     </div>
+
+<!--    专业介绍  -->
     <div class="sections page2">
       <h2 class="title animate" data-ani="fadeInDown">专业介绍</h2>
       <p class="subTitle animate" data-ani="fadeInDown">Major Introduction</p>
+      <video class="animate" data-ani="zoomInDown" data-delay="600"  poster="../assets/images/video5.png"  width="100%" controls>
+        <source src="../assets/video/video5.mp4" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
+
+      <br><br><br><br>
 
       <h3 class="title animate" data-ani="fadeInLeftBig" data-delay="1">视觉传达设计（2+2中德双学位）</h3>
       <p class="subTitle animate" data-ani="fadeInLeftBig" data-delay="300">Brand Design</p>
@@ -71,11 +79,6 @@
 
       <br><br><br>
 
-      <video  class="animate" data-ani="zoomInDown" data-delay="600"
-              poster="../assets/images/video3.jpg" width="100%" controls>
-        <source src="../assets/video/video3.mp4" type="video/mp4">
-        对不起；您的浏览器不支持HTML5视频
-      </video>
       <h3 class="title animate" data-ani="fadeInLeftBig">会展经济与管理专业（2+2中德双学位）</h3>
       <p class="subTitle animate" data-ani="fadeInLeftBig" data-delay="300">Brand Management</p>
       <p class="animate" data-ani="fadeInUp">
@@ -92,14 +95,14 @@
         监、市场调研经理、市场营销经理、设计管理经理、媒体公关经理、
         数字营销经理等职位。
       </p>
+      <video  class="animate" data-ani="zoomInDown" data-delay="600"
+              poster="../assets/images/video3.jpg" width="100%" controls>
+        <source src="../assets/video/video3.mp4" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
 
       <br><br><br><br>
 
-      <video  class="animate" data-ani="zoomInDown" data-delay="600"
-              poster="../assets/images/video4.jpg" width="100%" controls>
-        <source src="../assets/video/video4.mp4" type="video/mp4">
-        对不起；您的浏览器不支持HTML5视频
-      </video>
       <h3 class="title animate" data-ani="fadeInLeftBig">国际经济与贸易（2+2中德双学位）</h3>
       <p class="subTitle animate" data-ani="fadeInLeftBig" data-delay="300">International Economy and Trade</p>
       <p class="animate" data-ani="fadeInUp">
@@ -116,13 +119,18 @@
         管理工作；在工商企业从事国际贸易、金融投资、市场营销、电子商
         务、国际物流等工作。
       </p>
+      <video  class="animate" data-ani="zoomInDown" data-delay="600"
+              poster="../assets/images/video4.jpg" width="100%" controls>
+        <source src="../assets/video/video4.mp4" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
 
       <br><br><br><br>
 
 <!--      2双学位专业优势-->
       <h3 class="title animate" data-ani="fadeInLeftBig">2+2双学位专业优势</h3>
       <p class="subTitle animate" data-ani="fadeInLeftBig" data-delay="300">Program Advantages</p>
-      <div class="flex animate" data-ani="fadeInUp" data-delay="800">
+      <div class="flex animate" data-ani="bounceInRight" data-delay="800">
         <img class="icon" src="../assets/images/icon1.png" alt="">
         <p>
            <strong>安全留学、权威保障</strong> <br><br>
@@ -130,7 +138,7 @@
           教育部认可。
         </p>
       </div>
-      <div class="flex animate" data-ani="fadeInUp" data-delay="800">
+      <div class="flex animate" data-ani="bounceInRight" data-delay="800">
         <img class="icon" src="../assets/images/icon2.png" alt="">
         <p>
           <strong>中外课程融合、学分互认</strong> <br><br>
@@ -138,7 +146,7 @@
           分互认。
         </p>
       </div>
-      <div class="flex animate" data-ani="fadeInUp" data-delay="900">
+      <div class="flex animate" data-ani="bounceInRight" data-delay="900">
         <img class="icon" src="../assets/images/icon3.png" alt="">
         <p>
           <strong>全程跨文化能力培养</strong> <br><br>
@@ -146,7 +154,7 @@
           跨文化能力，提前适应国外大学生活学习方式。
         </p>
       </div>
-      <div class="flex animate" data-ani="fadeInUp" data-delay="1000">
+      <div class="flex animate" data-ani="bounceInRight" data-delay="1000">
         <img class="icon" src="../assets/images/icon4.png" alt="">
         <p>
           <strong>全方位留学服务</strong> <br><br>
@@ -155,7 +163,7 @@
           习生活帮助。
         </p>
       </div>
-      <div class="flex animate" data-ani="fadeInUp" data-delay="1100">
+      <div class="flex animate" data-ani="bounceInRight" data-delay="1100">
         <img class="icon" src="../assets/images/icon5.png" alt="">
         <p>
           <strong>权威认证的中外双学位</strong> <br><br>
@@ -165,7 +173,7 @@
           位证书可获教育部留学服务中心认证。
         </p>
       </div>
-      <div class="flex animate" data-ani="fadeInUp" data-delay="1100">
+      <div class="flex animate" data-ani="bounceInRight" data-delay="1100">
         <img class="icon" src="../assets/images/icon6.png" alt="">
         <p>
           <strong>高额留学奖学金</strong> <br><br>
@@ -175,7 +183,7 @@
           学金。
         </p>
       </div>
-      <div class="flex animate" data-ani="fadeInUp" data-delay="1100">
+      <div class="flex animate" data-ani="bounceInRight" data-delay="1100">
         <img class="icon" src="../assets/images/icon7.png" alt="">
         <p>
           <strong>海外实习机会</strong> <br><br>
@@ -430,8 +438,7 @@
         元/ 生；国际经济与贸易（中外2+2 双学位）专业学生在
         国外合作院校学习期间，学费按国外大学学费标准缴纳。
       </p>
-      <h2 cl
-          ass="title animate" data-ani="fadeInDown">毕业证书</h2>
+      <h2 class="title animate" data-ani="fadeInDown">毕业证书</h2>
       <p class="subTitle animate" data-ani="fadeInDown">Graduation Certificate</p>
       <p class=" animate " data-ani="fadeInUp" >
         达到中、外大学培养标准，可同时获得浙江万里学院本科
@@ -445,7 +452,7 @@
         邮箱：sqi@zwu.edu.cn <br>
         地址：浙江省宁波市鄞州区 钱湖南 8号 浙江万里学院 51 号楼A 座
       </div>
-      <img class="animate" data-ani="fadeInRight" src="../assets/images/website.jpg" alt="">
+      <img class="animate" data-ani="fadeInRight" data-delay="1000" src="../assets/images/website.jpg" alt="">
     </div>
 
   </div>
@@ -502,6 +509,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  /**{overflow: hidden;}*/
   body{
     color: white;text-align: left;overflow: hidden;
   }
@@ -620,5 +628,11 @@ export default {
   }
   .bounceInLeft{
     animation: bounceInLeft 1s ease-in;
+  }
+  .bounceInRight{
+    animation: bounceInRight 1s ease-in;
+  }
+  .rotateInDownLeft{
+    animation: rotateInDownLeft 1s ease-in;
   }
 </style>
