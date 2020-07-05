@@ -1,6 +1,6 @@
 <template>
   <div>
-<!--    第一页-->
+    <!--    第一页-->
     <div class="sections sections-full page1">
       <img class="animate bg" data-ani="fadeIn" src="../assets/images/page1.png" alt="">
       <img class="logo animate" data-ani="zoomInRight" src="../assets/images/logo.png" alt="">
@@ -17,12 +17,13 @@
       <img class="qrcode animate" data-ani="rotateInUpRight" data-delay="2500" src="../assets/images/wccode.png" alt="">
     </div>
 
-<!--    专业介绍  -->
+    <!--    专业介绍  -->
     <div class="sections page2">
       <h2 class="title animate" data-ani="fadeInDown">专业介绍</h2>
       <p class="subTitle animate" data-ani="fadeInDown">Major Introduction</p>
-      <video class="animate" data-ani="zoomInDown" data-delay="600"  poster="../assets/images/video5.png"  width="100%" controls>
-        <source src="../assets/video/video5.mp4" type="video/mp4">
+      <video class="animate" data-ani="fadeInLeft" data-delay="600" poster="../assets/images/video5.png" width="100%"
+             controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video5.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
 
@@ -43,8 +44,9 @@
         计总监、包装设计师、广告设计师、广告公司艺术指导、艺术总监、
         互动媒体设计师、网站设计师、界面设计师等职位。
       </p>
-      <video class="animate" data-ani="zoomInDown" data-delay="600" poster="../assets/images/video1.jpg" width="100%" controls>
-        <source src="../assets/video/video1.mp4" type="video/mp4">
+      <video class="animate" data-ani="fadeInLeft" data-delay="600" poster="../assets/images/video1.jpg" width="100%"
+             controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video1.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
 
@@ -67,9 +69,9 @@
         划师、广告文案师、广告创意总监、公关策划师、媒介策划师、媒体公
         关经理、数字营销师、客户总监等职位。
       </p>
-      <video  class="animate" data-ani="zoomInDown" data-delay="600"
-              poster="../assets/images/video2.jpg" width="100%" controls>
-        <source src="../assets/video/video2.mp4" type="video/mp4">
+      <video class="animate" data-ani="fadeInLeft" data-delay="600"
+             poster="../assets/images/video2.jpg" width="100%" controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video2.MP4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
 
@@ -95,9 +97,9 @@
         监、市场调研经理、市场营销经理、设计管理经理、媒体公关经理、
         数字营销经理等职位。
       </p>
-      <video  class="animate" data-ani="zoomInDown" data-delay="600"
-              poster="../assets/images/video3.jpg" width="100%" controls>
-        <source src="../assets/video/video3.mp4" type="video/mp4">
+      <video class="animate" data-ani="fadeInLeft" data-delay="600"
+             poster="../assets/images/video3.jpg" width="100%" controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video3.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
 
@@ -119,53 +121,53 @@
         管理工作；在工商企业从事国际贸易、金融投资、市场营销、电子商
         务、国际物流等工作。
       </p>
-      <video  class="animate" data-ani="zoomInDown" data-delay="600"
-              poster="../assets/images/video4.jpg" width="100%" controls>
-        <source src="../assets/video/video4.mp4" type="video/mp4">
+      <video class="animate" data-ani="fadeInLeft" data-delay="600"
+             poster="../assets/images/video4.jpg" width="100%" controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video4.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
 
       <br><br><br><br>
 
-<!--      2双学位专业优势-->
+      <!--      2双学位专业优势-->
       <h3 class="title animate" data-ani="fadeInLeftBig">2+2双学位专业优势</h3>
       <p class="subTitle animate" data-ani="fadeInLeftBig" data-delay="300">Program Advantages</p>
-      <div class="flex animate" data-ani="bounceInRight" data-delay="800">
-        <img class="icon" src="../assets/images/icon1.png" alt="">
-        <p>
-           <strong>安全留学、权威保障</strong> <br><br>
+      <div class="flex">
+        <img class="icon animate" data-ani="zoomInLeft" data-delay="300" src="../assets/images/icon1.png" alt="">
+        <p class=" animate" data-ani="bounceInRight" data-delay="800">
+          <strong>安全留学、权威保障</strong> <br><br>
           合作院校在国际具有较高的学术声誉，国外大学学位获
           教育部认可。
         </p>
       </div>
-      <div class="flex animate" data-ani="bounceInRight" data-delay="800">
-        <img class="icon" src="../assets/images/icon2.png" alt="">
-        <p>
+      <div class="flex">
+        <img class="icon animate" data-ani="zoomInLeft" data-delay="300" src="../assets/images/icon2.png" alt="">
+        <p class=" animate" data-ani="bounceInRight" data-delay="800">
           <strong>中外课程融合、学分互认</strong> <br><br>
           合作专业引入外方人才培养方案，专业课程深度对接、学
           分互认。
         </p>
       </div>
-      <div class="flex animate" data-ani="bounceInRight" data-delay="900">
-        <img class="icon" src="../assets/images/icon3.png" alt="">
-        <p>
+      <div class="flex">
+        <img class="icon animate" data-ani="zoomInLeft" data-delay="300" src="../assets/images/icon3.png" alt="">
+        <p class=" animate" data-ani="bounceInRight" data-delay="800">
           <strong>全程跨文化能力培养</strong> <br><br>
           外教全程参与学生在国内段的教学，帮助学生快速提高
           跨文化能力，提前适应国外大学生活学习方式。
         </p>
       </div>
-      <div class="flex animate" data-ani="bounceInRight" data-delay="1000">
-        <img class="icon" src="../assets/images/icon4.png" alt="">
-        <p>
+      <div class="flex">
+        <img class="icon animate" data-ani="zoomInLeft" data-delay="300" src="../assets/images/icon4.png" alt="">
+        <p class=" animate" data-ani="bounceInRight" data-delay="800">
           <strong>全方位留学服务</strong> <br><br>
           出国时，学生将在学院指导下办理团体留学签证。出国
           后，中德学院将继续为学生在德学习提供联络保障及学
           习生活帮助。
         </p>
       </div>
-      <div class="flex animate" data-ani="bounceInRight" data-delay="1100">
-        <img class="icon" src="../assets/images/icon5.png" alt="">
-        <p>
+      <div class="flex">
+        <img class="icon animate" data-ani="zoomInLeft" data-delay="300" src="../assets/images/icon5.png" alt="">
+        <p class=" animate" data-ani="bounceInRight" data-delay="800">
           <strong>权威认证的中外双学位</strong> <br><br>
           学生成绩达到中、外大学培养标准，可同时
           获得浙江万里学院本科学历证书、学士学位
@@ -173,9 +175,9 @@
           位证书可获教育部留学服务中心认证。
         </p>
       </div>
-      <div class="flex animate" data-ani="bounceInRight" data-delay="1100">
-        <img class="icon" src="../assets/images/icon6.png" alt="">
-        <p>
+      <div class="flex">
+        <img class="icon animate" data-ani="zoomInLeft" data-delay="300" src="../assets/images/icon6.png" alt="">
+        <p class=" animate" data-ani="bounceInRight" data-delay="800">
           <strong>高额留学奖学金</strong> <br><br>
           学生有机会获得由中国中央广播电视总台、德
           国品牌应用科学大学、德中当代中心共同设
@@ -183,9 +185,9 @@
           学金。
         </p>
       </div>
-      <div class="flex animate" data-ani="bounceInRight" data-delay="1100">
-        <img class="icon" src="../assets/images/icon7.png" alt="">
-        <p>
+      <div class="flex">
+        <img class="icon animate" data-ani="zoomInLeft" data-delay="300" src="../assets/images/icon7.png" alt="">
+        <p class=" animate" data-ani="bounceInRight" data-delay="800">
           <strong>海外实习机会</strong> <br><br>
           学生在国外学习期间，可申请进入合作院校
           的实践教学基地。在企业导师带领下与不同
@@ -198,97 +200,100 @@
     <div class="sections page3">
       <h2 class="title animate" data-ani="fadeInDown">招生计划及学制</h2>
       <p class="subTitle animate" data-ani="fadeInDown">Enrollment Plan and Length of Study</p>
-      <table class="animate " data-ani="fadeIn">
-        <tr class="title animate" data-ani="fadeInLeft">
+      <table class="animate " data-ani="zoomIn">
+        <tr class="title ">
           <td>专业名称</td>
           <td>视觉传达设计 <br>（2+2中的双学位）</td>
           <td>广告学 <br>（2+2中的双学位）</td>
-<!--          <td>会展经济与管理<br>（2+2中的双学位）</td>-->
-<!--          <td>国际经济与贸易 <br>（2+2中的双学位）</td>-->
+          <!--          <td>会展经济与管理<br>（2+2中的双学位）</td>-->
+          <!--          <td>国际经济与贸易 <br>（2+2中的双学位）</td>-->
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>"三位一体" <br> 招生计划</td>
           <td>30 <br>（普通类）</td>
           <td>30</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>高考统招<br>计划</td>
           <td>60 <br>（艺术类）</td>
           <td>60</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>招生科类</td>
           <td>艺术类、<br>普通类</td>
           <td>普通类</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>选考科目</td>
           <td>不限</td>
           <td>不限</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>2019年<br>"三位一体"</td>
           <td>514</td>
           <td>518</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>2019年高考 <br>录取平均分</td>
           <td>539</td>
           <td>547</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>学制</td>
           <td colspan="2">采用2+2 联合培养模式，第一学年、
             第二学年在浙江万里学院学习，第三
             学年、第四学年在德国品牌应用科学
-            大学学习。</td>
+            大学学习。
+          </td>
         </tr>
       </table>
       <br>
-      <table class="animate " data-ani="fadeIn">
-        <tr class="title animate" data-ani="fadeInLeft">
+      <table class="animate " data-ani="zoomIn">
+        <tr class="title ">
           <td>专业名称</td>
           <td>会展经济与管理 <br>（2+2中的双学位）</td>
           <td>国际经济与贸易 <br>（2+2中的双学位）</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>"三位一体" <br> 招生计划</td>
-          <td>30 </td>
-          <td> </td>
+          <td>30</td>
+          <td></td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>高考统招<br>计划</td>
           <td>30</td>
           <td>30</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>招生科类</td>
           <td>普通类</td>
           <td>普通类</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>选考科目</td>
           <td>不限</td>
           <td>不限</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>2019年<br>"三位一体"</td>
           <td>526</td>
-          <td> </td>
+          <td></td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>2019年高考 <br>录取平均分</td>
           <td>548</td>
           <td>551</td>
         </tr>
-        <tr class="title animate" data-ani="fadeInLeft">
+        <tr class="title ">
           <td>学制</td>
-          <td >采用2+2 联合培养模式，第一学年、
+          <td>采用2+2 联合培养模式，第一学年、
             第二学年在浙江万里学院学习，第三
             学年、第四学年在德国品牌应用科学
-            大学学习。</td>
-          <td >第1-2 学年在浙江万里学院学习，第
-            3-4 学年在英美等国外合作院校学习。</td>
+            大学学习。
+          </td>
+          <td>第1-2 学年在浙江万里学院学习，第
+            3-4 学年在英美等国外合作院校学习。
+          </td>
         </tr>
       </table>
 
@@ -297,7 +302,7 @@
     <div class="sections page4">
       <h2 class="title animate" data-ani="fadeInDown">可选在德实习企业</h2>
       <p class="subTitle animate" data-ani="fadeInDown">Optional Internship in German Companies</p>
-      <p class=" animate " data-ani="fadeInUpBig" >
+      <p class=" animate " data-ani="fadeInUpBig">
         就读2+2 中德双学位专业的学生，可申请进入合作院校德国品牌应用科学大学在欧
         洲的各实践教学基地实习。可选择联合利华、英美烟草、西门子、大众、安联保险在
         内的20 多个著名跨国公司和集团及朗涛品牌设计、奥美广告、阳狮广告、Mutabor
@@ -360,7 +365,6 @@
           <h3>Prof. Dr. Yonca
             Limon Calisan</h3>
         </div>
-
 
 
       </div>
@@ -428,10 +432,9 @@
       </div>
 
 
-
       <h2 class="title animate" data-ani="fadeInDown">学费、住宿费</h2>
       <p class="subTitle animate" data-ani="fadeInDown">Tuition & Accommodation Fees</p>
-      <p class=" animate " data-ani="fadeInUp" >
+      <p class=" animate " data-ani="fadeInUp">
         学费人民币32000 元/ 生• 学年；住宿费2800 元/ 生• 学年。 <br><br>
         中德2+2 双学位专业学生在德国品牌应用科学大学学习
         期间学费10680 欧元/ 生• 学年，一次性注册费2500 欧
@@ -440,7 +443,7 @@
       </p>
       <h2 class="title animate" data-ani="fadeInDown">毕业证书</h2>
       <p class="subTitle animate" data-ani="fadeInDown">Graduation Certificate</p>
-      <p class=" animate " data-ani="fadeInUp" >
+      <p class=" animate " data-ani="fadeInUp">
         达到中、外大学培养标准，可同时获得浙江万里学院本科
         学历证书、学士学位证书和国外大学学士学位证书。
       </p>
@@ -459,180 +462,254 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-      flag:true
-    }
-  },
-  methods:{
-    handleAnimate() {
-      let top = pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      let vh = document.documentElement.clientHeight;
-      let dom = document.querySelectorAll(".animate");
-      console.log($('.animate'));
-      [].slice.call(dom).forEach(v => {
-        console.log(top , vh,$(v).offset().top);
-        if( (top + vh) > $(v).offset().top){
-          var delay = v.dataset.delay;
-          if(delay){
-            setTimeout(() => {
+  export default {
+    name: 'HelloWorld',
+    data() {
+      return {
+        flag: true
+      }
+    },
+    methods: {
+      handleAnimate() {
+        let top = pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        let vh = document.documentElement.clientHeight;
+        let dom = document.querySelectorAll(".animate");
+        console.log($('.animate'));
+        [].slice.call(dom).forEach(v => {
+          console.log(top, vh, $(v).offset().top);
+          if ((top + vh) > $(v).offset().top) {
+            var delay = v.dataset.delay;
+            if (delay) {
+              setTimeout(() => {
+                v.style.opacity = 1;
+                v.classList.add(v.dataset.ani)
+              }, delay)
+            } else {
               v.style.opacity = 1;
               v.classList.add(v.dataset.ani)
-            }, delay)
-          }else{
-            v.style.opacity = 1;
-            v.classList.add(v.dataset.ani)
+            }
+          } else {
+            v.classList.remove(v.dataset.ani)
+            v.style.opacity = 0;
           }
-        }else{
-          v.classList.remove(v.dataset.ani)
-          v.style.opacity = 0;
-        }
-      })
+        })
+      },
+
     },
+    mounted() {
+      this.$nextTick(() => {
+        this.handleAnimate()//初始化第一次加载时在视口内就执行动画
+        addEventListener('scroll', this.handleAnimate);
+      })
 
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.handleAnimate()//初始化第一次加载时在视口内就执行动画
-      addEventListener('scroll', this.handleAnimate);
-    })
-
-  },
-  destroyed() {
-    removeEventListener('scroll', this.handleAnimate);
+    },
+    destroyed() {
+      removeEventListener('scroll', this.handleAnimate);
+    }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   /**{overflow: hidden;}*/
-  body{
-    color: white;text-align: left;overflow: hidden;
+  body {
+    color: white;
+    text-align: left;
+    overflow: hidden;
   }
-  img{max-width: 100%;}
-  html::-webkit-scrollbar,body::-webkit-scrollbar{display: none;}
-  .sections{
-    position: relative;padding: 5%;
+
+  img {
+    max-width: 100%;
   }
-  .sections-full{padding: 0;}
-  .logo{
+
+  html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sections {
+    position: relative;
+    padding: 5%;
+  }
+
+  .sections-full {
+    padding: 0;
+  }
+
+  .logo {
     position: absolute;
     width: 80%;
     left: 10%;
     top: 4%;
   }
-  .title{margin-bottom: 0;}
-  .title+.subTitle{margin-top: 4px;}
-  .describe{
-    color: white;font-size: 12px;text-align: left;text-shadow: 5px 5px 10px #2c3e50;
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .title + .subTitle {
+    margin-top: 4px;
+  }
+
+  .describe {
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    text-shadow: 5px 5px 10px #2c3e50;
     line-height: 18px;
   }
-  .flex{display: flex;flex-direction: row;align-items: center;justify-content: left;}
-  .flex strong{font-size: 17px;}
-  .icon{width: 80px;margin-right: 10px;}
-  .animate{opacity: 0}
-  .page1{padding-top: 100px;background: linear-gradient(10deg, #85c46b, #046eb8);}
-  .page1 .bg{display: block;}
-  .page1 .describe{
-    position: absolute;left: 5%;top: 15%;z-index:2;width: 90%;
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
   }
-  .qrcode{
+
+  .flex strong {
+    font-size: 17px;
+  }
+
+  .icon {
+    width: 80px;
+    margin-right: 10px;
+  }
+
+  .animate {
+    opacity: 0
+  }
+
+  .page1 {
+    padding-top: 100px;
+    background: linear-gradient(10deg, #85c46b, #046eb8);
+  }
+
+  .page1 .bg {
+    display: block;
+  }
+
+  .page1 .describe {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    z-index: 2;
+    width: 90%;
+  }
+
+  .qrcode {
     position: absolute;
     width: 14%;
     bottom: 5%;
-    left: 5%;transition: all .65s;
+    left: 5%;
+    transition: all .65s;
   }
-  .qrcode:last-child{
+
+  .qrcode:last-child {
     left: 22%;
   }
-  .qrcode:hover{
+
+  .qrcode:hover {
     width: 70%;
     z-index: 99;
     left: 15%;
   }
 
-  .page2{
-   background: linear-gradient(45deg, #036eb8, #6aae8c);
+  .page2 {
+    background: linear-gradient(45deg, #036eb8, #6aae8c);
   }
-.page3,.page4{
-  color: #333;
-}
-.page3 .title,.page4 .title{color: #0079c3;}
-  table{text-align: center;background-color: #eee;border-collapse: collapse;}
-  table td:first-child{width: 25%;background-color: #0079c3;color: white;}
-  table td{border: 1px white solid;padding: 10px;width: 37.55%;}
 
-  .item2{width: 50%;box-sizing: border-box;padding-right: 5px;position: relative;}
-  .item2:nth-child(2n+2){padding-right: 0;padding-left: 5px;}
-  .item2 img{display: block;}
-  .tea-warp .item2 h3{margin-top: 0;text-align: center;background-color: #eee;padding: 5px 0;}
-  .stu-warp .item2 h3{margin-top: 0;padding: 5px 0;margin-bottom: 0;text-align: left;}
-  .stu-warp .item2 p{margin-top: 0px;}
-  .stu-warp .item2{margin-bottom: 10px;}
-  .page4 .flex{flex-wrap: wrap;align-items: stretch;}
-  .stu-warp .describe{position: absolute;bottom: 0;left: 10px;}
+  .page3, .page4 {
+    color: #333;
+  }
 
-  .footer{display: flex;align-items: center;justify-content: space-between;padding-right: 5%;}
-  .footer .info{background: #0971b7;padding: 10px 5px; width: 73%;margin-right: 2%;padding-left: 5%;}
-  .footer img{width: 25%;}
+  .page3 .title, .page4 .title {
+    color: #0079c3;
+  }
 
-/*  animation*/
-  .fadeInLeftBig{
-    animation: fadeInLeftBig 1s;
+  table {
+    text-align: center;
+    background-color: #eee;
+    border-collapse: collapse;
   }
-  .fadeInLeft{
-    animation: fadeInLeft 1s;
+
+  table td:first-child {
+    width: 25%;
+    background-color: #0079c3;
+    color: white;
   }
-  .fadeInDown{
-    animation: fadeInDown 1s;
+
+  table td {
+    border: 1px white solid;
+    padding: 10px;
+    width: 37.55%;
   }
-  .rotateInUpRight{
-    animation: rotateInDownLeft 1s;
+
+  .item2 {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 5px;
+    position: relative;
   }
-.zoomInRight{
-  animation: zoomInDown 1.5s ease-in;
-}
-.zoomInDown{
-  animation: zoomInDown 1s ease-in;
-}
-  .fadeInUpBig{
-    animation: zoomInRight 1.8s ease-out;
+
+  .item2:nth-child(2n+2) {
+    padding-right: 0;
+    padding-left: 5px;
   }
-  .fadeOutDown{
-    animation: fadeOutDown 1s;
+
+  .item2 img {
+    display: block;
   }
-  .fadeIn{
-    animation: fadeIn 1s;
+
+  .tea-warp .item2 h3 {
+    margin-top: 0;
+    text-align: center;
+    background-color: #eee;
+    padding: 5px 0;
   }
-  .fadeInUp{
-    animation: fadeInUp 1s;
+
+  .stu-warp .item2 h3 {
+    margin-top: 0;
+    padding: 5px 0;
+    margin-bottom: 0;
+    text-align: left;
   }
-  .fadeInLeft{
-    animation: fadeInLeft 1s;
+
+  .stu-warp .item2 p {
+    margin-top: 0px;
   }
-  .fadeInRight{
-    animation: fadeInRight 1s;
+
+  .stu-warp .item2 {
+    margin-bottom: 10px;
   }
-  .flipInX{
-    animation: flipInX 1s;
+
+  .page4 .flex {
+    flex-wrap: wrap;
+    align-items: stretch;
   }
-  .flipInX{
-    animation: flipInX 1s;
+
+  .stu-warp .describe {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
   }
-  .bounceInUp{
-    animation: bounceInUp 1s ease-in;
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
   }
-  .bounceInLeft{
-    animation: bounceInLeft 1s ease-in;
+
+  .footer .info {
+    background: #0971b7;
+    padding: 10px 5px;
+    width: 73%;
+    margin-right: 2%;
+    padding-left: 5%;
   }
-  .bounceInRight{
-    animation: bounceInRight 1s ease-in;
+
+  .footer img {
+    width: 25%;
   }
-  .rotateInDownLeft{
-    animation: rotateInDownLeft 1s ease-in;
-  }
+
 </style>
+<style src="../utils/animate.css"></style>

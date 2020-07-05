@@ -1,0 +1,128 @@
+
+/*  animation*/
+.fadeInLeftBig{
+  animation: fadeInLeftBig 1s;
+}
+.fadeInLeft{
+  animation: fadeInLeft 1s;
+}
+.fadeInDown{
+  animation: fadeInDown 1s;
+}
+.rotateInUpRight{
+  animation: rotateInDownLeft 1s;
+}
+.zoomInRight{
+  animation: zoomInDown 1.5s ease-in;
+}
+.zoomIn{
+  animation: zoomIn .35s ease-out;
+}
+.zoomInDown{
+  animation: zoomInDown 1s ease-in;
+}
+.fadeInUpBig{
+  animation: zoomInRight 1.8s ease-out;
+}
+.fadeOutDown{
+  animation: fadeOutDown 1s;
+}
+.fadeIn{
+  animation: fadeIn 1s;
+}
+.fadeInUp{
+  animation: fadeInUp 1s;
+}
+.fadeInLeft{
+  animation: fadeInLeft 1s;
+}
+.fadeInRight{
+  animation: fadeInRight 1s;
+}
+.flipInX{
+  animation: flipInX 1s;
+}
+.flipInX{
+  animation: flipInX 1s;
+}
+.bounceIn{
+  animation: bounceIn 1s ease-in;
+}
+.bounceInUp{
+  animation: bounceInUp 1s ease-in;
+}
+.bounceInLeft{
+  animation: bounceInLeft 1s ease-in;
+}
+.bounceInRight{
+  animation: bounceInRight 1s ease-in;
+}
+.rotateInDownLeft{
+  animation: rotateInDownLeft 1s ease-in;
+}
+.zoomInLeft{
+  animation: zoomInLeft 1s ease-in;
+}
+
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeInDown{
+  animation: fadeInDown 1s ease-in;
+}
+.fadeInLeft{
+  animation: fadeInLeft 1s ease-in;
+}
+.fadeInRight{
+  animation: fadeInRight 1s ease-in;
+}
+.fadeInUp{
+  animation: fadeInUp 1s ease-in;
+}
+.bounceIn{
+  animation: bounceIn 1s ease-in;
+}
+.bounceInDown{
+  animation: bounceInDown 1s ease-in;
+}
+.bounceInLeft{
+  animation: bounceInLeft 1s ease-in;
+}
+.bounceInRight{
+  animation: bounceInRight 1s ease-in;
+}
+.bounceInUp{
+  animation: bounceInUp 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+.fadeIn{
+  animation: fadeIn 1s ease-in;
+}
+
+
