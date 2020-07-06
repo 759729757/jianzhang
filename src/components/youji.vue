@@ -90,6 +90,46 @@
         一键就知道
       </span>
     </div>
+<!--广告学专业介绍-->
+    <div class="section-full">
+      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+             controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
+    </div>
+    <div class="sections-sm">
+      <h3 class="">
+        广告学（2+2中德双学位）专业
+      </h3>
+    </div>
+    <!--会展经济与管理专业介绍视频-->
+    <div class="section-full">
+      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+             controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
+    </div>
+    <div class="sections-sm">
+      <h3 class="">
+        会展经济与管理（2+2中德双学位）专业
+      </h3>
+    </div>
+    <!--视觉创达设计-->
+    <div class="section-full">
+      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+             controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
+    </div>
+    <div class="sections-sm">
+      <h3 class="">
+        视觉传达设计（2+2中德双学位）专业
+      </h3>
+    </div>
+
 
   </div>
 </template>
@@ -206,6 +246,9 @@
   .sections{
     padding: 8%;
   }
+  .sections-sm{
+    padding: 3% 8%;
+  }
   .content-text{
     font-size: 12px;line-height: 22px;margin: 0;
   }
@@ -221,6 +264,9 @@
   }
   .black-bg{
     background-color: black;color: white;
+  }
+  .title-warp{
+    padding-left: 8%;box-sizing: border-box;
   }
 
 /*  滚动的样式 */
