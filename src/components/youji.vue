@@ -83,12 +83,25 @@
         <strong>讲者介绍：</strong><br>
         丽蒙-卡莉珊教授，德国品牌应用科学大学国际品牌传播系主任，拥有多年在德国、奥地利、中国等地的跨文化教学经验以及食品行业的市场营销经验，专注于跨文化、设计与感知、神经营销等领域的研究。  </p>
     </div>
+<!--    专业秘密一看就知-->
+    <div class="fixed-full flex-center text-center" style="opacity: 0;" id="zhuanye-warp">
+      <p class="text-gradient text-xlg abs " :class="biger1">
+        广告学
+        <br>2+2中德双学位
+      </p>
+      <p class="text-gradient text-xlg abs zhuanye2" :class="biger2">
+        会展经济与管理<br>2+2中德双学位
+      </p>
+      <p class="text-gradient text-xlg abs zhuanye3" :class="biger3">
+        视觉传达设计<br>2+2中德双学位
+      </p>
+    </div>
 
-    <div class="sections part1">
-      <span class="text-gradient text-xlg">
+    <div class="sections part1 animate" data-ani="zoomInUp" data-delay="200" style="opacity: 0;margin-top: 100vh;background: none;">
+      <p class="text-gradient text-xlg">
         这些专业秘密 ， <br>
         一键就知道
-      </span>
+      </p>
     </div>
 <!--广告学专业介绍-->
     <div class="section-full">
@@ -129,7 +142,62 @@
         视觉传达设计（2+2中德双学位）专业
       </h3>
     </div>
+<!--    听他们说。。。-->
+    <div class="black-bg sections "  >
+      <p class="text-xlg animate" data-ani="fadeInUp">
+        听他们说，关于<br>
+        在万里中德的故事
+      </p>
+    </div>
+    <!--听他们说-->
+    <div class="section-full">
+      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+             controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
+    </div>
+    <div class="sections-sm black-bg">
+      <h3 class="">
+        中德学院的师兄师姐们向即将入读的学弟学妹们送上祝福：保持炙热，相信自己。祝你成功viel Erfolg!
+      </h3>
+    </div>
+    <div class="sections part1 text-xlg white-bg" >
+      <span class="text-gradient animate" data-ani="fadeInUp">
+       听他们说，关于<br>
+       教学初体验，<br> 感受跨文化交流
+      </span>
+    </div>
+    <!-- 教学初体验，<br> 感受跨文化交流  -->
+    <div class="section-full">
+      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+             controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
+    </div>
+<!--    学生作品-->
+    <div class="box3"></div>
+<!--    第1个学生作品-->
+    <div class="product product1"
+         :style="'background-size:'+product1bg+'%'"
+         id="product1" style="display: none;">
+      <h2 class="author">
+        学生 徐焓涛 的作品
+      </h2>
+    </div>
+<!--    第二个学生作品-->
+    <div class="product product2"
+         :style="'background-size:'+product2bg+'%'"
+         id="product2" style="display: none;">
+      <h2 class="author">
+        学生 徐焓涛 的作品
+      </h2>
+    </div>
 
+    <div style="height: 200px;">
+
+    </div>
 
   </div>
 </template>
@@ -148,6 +216,13 @@
         classScroll1:'scroll-1',
         classScroll2:'scroll-2',
 
+        biger1:'',
+        biger2:'',
+        biger3:'',
+
+        product1bg:'180',
+        product2bg:'180'
+
       }
     },
     methods: {
@@ -164,7 +239,7 @@
           this.classScroll1 = 'scroll-1-done';
         }
           //第二部分
-        console.log(top);
+        // console.log(top);
         //控制“从这里找到答案”显示与否
         if(top > 790){
           $('#scroll2-hini')[0].style.opacity = GetPercent(top-790,60)+"%";
@@ -178,6 +253,55 @@
           $('.scroll-2.scrolling').show();
           $('.scroll-2.done')[0].style.opacity = 0;
         }
+
+        //三个专业放大
+        if(top>1900){
+          $('#zhuanye-warp')[0].style.opacity = 1;
+        }else {
+          $('#zhuanye-warp')[0].style.opacity = 0;
+        }
+
+        if(top>2360){
+          this.biger1='biger1-done';
+          $('.zhuanye2')[0].style.opacity = 1;
+        }else {
+          this.biger1='';
+          $('.zhuanye2')[0].style.opacity = 0;
+        }
+        if(top>2660){
+          this.biger2='biger2-done';
+          $('.zhuanye3')[0].style.opacity = 1;
+        }else {
+          this.biger2='';
+          $('.zhuanye3')[0].style.opacity = 0;
+        }
+        if(top>2960){
+          this.biger3='biger3-done';
+        }else {
+          this.biger3='';
+        }
+
+        if(top>4650){
+          $('#product1')[0].style.display = 'block';
+        }else{
+          $('#product1')[0].style.display = 'none';
+        }
+        if(top > $('.box3').offset().top){
+          console.log($('.box3').offset().top );
+          //  显示第一个学生作品
+          var ruler = GetPercent((top-$('.box3').offset().top),79) >= 80 ?
+            80 : GetPercent((top-$('.box3').offset().top),79)
+          this.product1bg = 180 - ruler;
+        }
+        if((top+vh) > $('.box3').offset().top){
+          console.log($('.box3').offset().top );
+          //  显示第2个学生作品
+          var ruler = GetPercent((top-$('.box3').offset().top),79) >= 80 ?
+            80 : GetPercent((top-$('.box3').offset().top),79)
+          this.product2bg = 180 - ruler;
+        }
+
+
 
 
 
@@ -232,7 +356,7 @@
     return total <= 0 ? 0 : (Math.round(num / total * 10000) / 100.00);
   }
 </script>
-
+<style src="../utils/animate.css"></style>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   video{display: block;}
@@ -247,7 +371,7 @@
     padding: 8%;
   }
   .sections-sm{
-    padding: 3% 8%;
+    padding: 3% 8%;background: white;
   }
   .content-text{
     font-size: 12px;line-height: 22px;margin: 0;
@@ -261,6 +385,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
   }
   .black-bg{
     background-color: black;color: white;
@@ -303,8 +428,51 @@
   }
   .scroll-2.done{opacity: 0;position: relative;}
   #scroll2-hini{transition: opacity 0s;}
+  .sections-sm h3{margin-top: 0;}
+  .fixed-full{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;box-sizing: border-box;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .zhuanye2,.zhuanye3{opacity: 0;transition: opacity 1s ease-in;}
+  .biger1-done,.biger2-done,.biger3-done{
+    opacity: 1;
+    animation: binger 1.2s ease-out forwards;
+  }
+  @keyframes binger {
+    from{
+      transform:scale(1);
+      opacity: 1;
+    }
+    to{
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  .fadeInUp{
+    animation: fadeInUp .5s ease-out;
+  }
 
-
-
+  .box3{width: 100%;height: 300vh;}
+  .product{
+    width: 100%;position: fixed;left: 0;top: 0;z-index: -1;
+    height: 100vh;background-color: black;
+    background-position: center;background-size: 150%;background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .author{
+    position: absolute;left: 6%;color: white;bottom: 6vh;
+  }
+  .product1{
+    background-image: url("../assets/images/product1.jpg");
+  }
+  .product2{
+    background-image: url("../assets/images/product2.jpg");
+  }
 </style>
-<style src="../utils/animate.css"></style>

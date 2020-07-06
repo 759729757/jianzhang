@@ -22,4 +22,11 @@ export default {
   body{
     margin: 0;font-size: 12px;
   }
+  .white-bg{background-color: white;}
+  .text-center{
+    text-align: center;
+  }
+  .abs{
+    position: absolute;
+  }
 </style>

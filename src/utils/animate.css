@@ -63,6 +63,9 @@
 .zoomInLeft{
   animation: zoomInLeft 1s ease-in;
 }
+.zoomInUp{
+  animation: zoomInUp 1.5s ease-out;
+}
 
 .fadeIn{
   animation: fadeIn 1s ease-in;
