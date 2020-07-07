@@ -169,7 +169,7 @@
       </span>
     </div>
     <!-- 教学初体验，<br> 感受跨文化交流  -->
-    <div class="section-full">
+    <div class="section-full" id="kuawenhua">
       <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
              controls>
         <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
@@ -191,13 +191,44 @@
          :style="'background-size:'+product2bg+'%'"
          id="product2" style="display: none;">
       <h2 class="author">
-        学生 徐焓涛 的作品
+        学生 2 的作品
       </h2>
     </div>
-
-    <div style="height: 200px;">
-
+    <!--    第二个学生作品-->
+    <div class="product product3"
+         :style="'background-size:'+product3bg+'%;top:'+product3Top+'px'"
+         id="product3" style="display: none;">
+      <h2 class="author">
+        学生 2 的作品
+      </h2>
     </div>
+    <div id="productCover" style="height: 15vh;"></div>
+    <div class="sections part1 text-xlg white-bg" >
+      <span class="text-gradient animate" data-ani="fadeInUp">
+       校园云探店
+      </span>
+    </div>
+    <!--校园云探店-->
+    <div class="section-full">
+      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+             controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
+    </div>
+    <div class="sections ">
+      <h3 class="">
+        浙江万里学院校内餐饮选择多样，寝室楼附近有商业广场，每层（共三层）都有特色餐饮店，例如包子叔叔、张亮麻辣烫、开心花甲、台湾美食等。
+        <br>
+        教学楼附近有瑞幸咖啡、罗森便利店和特色早餐店，今年年初，校内还新建了KFC和星巴克，附近还有一鸣鲜奶吧、COCO、古茗等店，是同学们早餐或下午茶的首选。
+        <br>
+        本期云探店带大家参观去年新装修的万里餐厅。
+        <br>
+        点击视频来观看吧！
+      </h3>
+    </div>
+
+
 
   </div>
 </template>
@@ -221,7 +252,9 @@
         biger3:'',
 
         product1bg:'180',
-        product2bg:'180'
+        product2bg:'180',
+        product3bg:'180',
+        product3Top:0,
 
       }
     },
@@ -281,26 +314,48 @@
           this.biger3='';
         }
 
-        if(top>4650){
-          $('#product1')[0].style.display = 'block';
+        if(top>($('#kuawenhua').offset().top-vh)){
+          if((top-2*vh+vh/4) > $('.box3').offset().top){
+            $('#product3')[0].style.display='block';
+            $('#product2')[0].style.display='none';
+            $('#product1')[0].style.display='none';
+          }else if((top-vh+vh/4) > $('.box3').offset().top){
+            $('#product3')[0].style.display='none';
+            $('#product2')[0].style.display='block';
+          }else{
+            $('#product3')[0].style.display='none';
+            $('#product2')[0].style.display='none';
+            $('#product1')[0].style.display='block';
+          }
         }else{
-          $('#product1')[0].style.display = 'none';
-        }
-        if(top > $('.box3').offset().top){
-          console.log($('.box3').offset().top );
-          //  显示第一个学生作品
-          var ruler = GetPercent((top-$('.box3').offset().top),79) >= 80 ?
-            80 : GetPercent((top-$('.box3').offset().top),79)
-          this.product1bg = 180 - ruler;
-        }
-        if((top+vh) > $('.box3').offset().top){
-          console.log($('.box3').offset().top );
-          //  显示第2个学生作品
-          var ruler = GetPercent((top-$('.box3').offset().top),79) >= 80 ?
-            80 : GetPercent((top-$('.box3').offset().top),79)
-          this.product2bg = 180 - ruler;
+          $('#product1')[0].style.display='none';
         }
 
+        //  显示第一个学生作品
+        if(top > ($('.box3').offset().top-vh/2)){
+          var ruler = GetPercent((top-$('.box3').offset().top),79+vh/2) >= 80 ?
+            80 : GetPercent((top-$('.box3').offset().top),79+vh/2)
+          this.product1bg = 180 - ruler;
+        }
+        //  显示第2个学生作品
+        if((top-vh) > $('.box3').offset().top){
+          var ruler = GetPercent(((top-vh)-$('.box3').offset().top),79) >= 80 ?
+            80 : GetPercent(((top-vh)-$('.box3').offset().top),79)
+          this.product2bg = 180 - ruler;
+        }
+        //  显示第3个学生作品
+        if((top-2*vh) > $('.box3').offset().top){
+          var ruler = GetPercent(((top-2*vh)-$('.box3').offset().top),79) >= 100 ?
+            100 : GetPercent(((top-2*vh)-$('.box3').offset().top),79)
+          this.product3bg = 180 - ruler;
+        }
+        //第3个学生作品缩小向上 7130 - 7450
+        if( top > 7130 && top < 7834){
+          console.log('cover up')
+          this.product3Top = 7130 - top;
+        }else{
+
+        }
 
 
 
@@ -464,7 +519,8 @@
     width: 100%;position: fixed;left: 0;top: 0;z-index: -1;
     height: 100vh;background-color: black;
     background-position: center;background-size: 150%;background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
+    transition: all 0s;
   }
   .author{
     position: absolute;left: 6%;color: white;bottom: 6vh;
@@ -473,6 +529,9 @@
     background-image: url("../assets/images/product1.jpg");
   }
   .product2{
-    background-image: url("../assets/images/product2.jpg");
+    background-image: url("../assets/images/product3.jpg");
+  }
+  .product3{
+    background-image: url("../assets/images/product4.jpeg");
   }
 </style>
