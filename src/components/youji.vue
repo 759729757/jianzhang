@@ -1,17 +1,15 @@
 <template>
   <div class="page">
-    <div class="sections part1 text-xlg" :class="classScroll1" :style="'padding-top:'+scroll1+'vh'">
+    <div class="sections part1 text-xlg transition-no" :class="classScroll1" :style="'padding-top:'+scroll1+'vh;'">
       <span class="text-gradient  ">
         云游万里中德 <br>
         从这里开始&nbsp;&nbsp;&nbsp;&nbsp;
       </span>
     </div>
-<!--    https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov-->
-
-    <div class="section-full">
-      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+    <div class="section-full transition-no" >
+      <video class="animate" data-ani="fadeIn" poster=" " width="100%"
              controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
     </div>
@@ -38,9 +36,9 @@
     </div>
 <!--    第一个视频-->
     <div class="section-full">
-    <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+    <video class="animate" data-ani="fadeIn"  width="100%"
            controls>
-      <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+      <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/Chapter%201.mp4" type="video/mp4">
       对不起；您的浏览器不支持HTML5视频
     </video>
     </div>
@@ -54,9 +52,9 @@
     </div>
     <!--    第二个视频-->
     <div class="section-full">
-    <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+    <video class="animate" data-ani="fadeIn" width="100%"
            controls>
-      <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+      <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/class2.mp4" type="video/mp4">
       对不起；您的浏览器不支持HTML5视频
     </video>
     </div>
@@ -70,9 +68,9 @@
     </div>
     <!--    第3个视频-->
     <div class="section-full">
-    <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+    <video class="animate" data-ani="fadeIn"  width="100%"
            controls>
-      <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+      <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/class3.mp4" type="video/mp4">
       对不起；您的浏览器不支持HTML5视频
     </video>
     </div>
@@ -105,9 +103,9 @@
     </div>
 <!--广告学专业介绍-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+      <video class="animate" data-ani="fadeIn" width="100%"
              controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/guanggaoxue.MP4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
     </div>
@@ -118,9 +116,9 @@
     </div>
     <!--会展经济与管理专业介绍视频-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+      <video class="animate" data-ani="fadeIn" width="100%"
              controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/huizhan.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
     </div>
@@ -131,9 +129,9 @@
     </div>
     <!--视觉创达设计-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+      <video class="animate" data-ani="fadeIn"  width="100%"
              controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/shichuan.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
     </div>
@@ -151,9 +149,9 @@
     </div>
     <!--听他们说-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+      <video class="animate" data-ani="fadeIn" width="100%"
              controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/studentSay.mov" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
     </div>
@@ -170,11 +168,8 @@
     </div>
     <!-- 教学初体验，<br> 感受跨文化交流  -->
     <div class="section-full" id="kuawenhua">
-      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
-             controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
-        对不起；您的浏览器不支持HTML5视频
-      </video>
+      <img src="../assets/images/ketang.jpg" width="100%" style="display: block;" class="animate" data-ani="fadeIn"  alt="">
+
     </div>
 <!--    学生作品-->
     <div class="box3"></div>
@@ -191,7 +186,7 @@
          :style="'background-size:'+product2bg+'%'"
          id="product2" style="display: none;">
       <h2 class="author">
-        学生 2 的作品
+        学生 谢璐冰 的作品
       </h2>
     </div>
     <!--    第二个学生作品-->
@@ -199,10 +194,10 @@
          :style="'background-size:'+product3bg+'%;top:'+product3Top+'px'"
          id="product3" style="display: none;">
       <h2 class="author">
-        学生 2 的作品
+        学生 成树 的作品
       </h2>
     </div>
-    <div id="productCover" style="height: 15vh;"></div>
+<!--    <div id="productCover" style="height: 15vh;"></div>-->
     <div class="sections part1 text-xlg white-bg" >
       <span class="text-gradient animate" data-ani="fadeInUp">
        校园云探店
@@ -210,9 +205,9 @@
     </div>
     <!--校园云探店-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn" poster="../assets/images/video5.png" width="100%"
+      <video class="animate" data-ani="fadeIn"  width="100%"
              controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/tandian.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
     </div>
@@ -227,12 +222,29 @@
         点击视频来观看吧！
       </h3>
     </div>
+    <div class="jianzhang-warp">
+      <img class="animate bg" data-ani="fadeIn" src="../assets/images/page1.png" alt="">
+
+      <div class="sections hini text-xlg " >
+        想要报考？ <br>
+        <span class="animate" data-ani="zoomInLeft">
+          <a href="/jz">
+            点击这里
+          </a>
+      </span>
+      </div>
+<!--      <div class="hini2">-->
+<!--          <h2>-->
+<!--            2020年招生介绍-->
+<!--          </h2>-->
+<!--          INTRODUCTION OF 2020 ENROLLMENT-->
+<!--      </div>-->
+    </div>
 
 
 
   </div>
 </template>
-
 <script>
   export default {
     name: 'youji',
@@ -315,13 +327,14 @@
         }
 
         if(top>($('#kuawenhua').offset().top-vh)){
-          if((top-2*vh+vh/4) > $('.box3').offset().top){
+          if((top-1.8*vh) > $('.box3').offset().top){
             $('#product3')[0].style.display='block';
             $('#product2')[0].style.display='none';
             $('#product1')[0].style.display='none';
-          }else if((top-vh+vh/4) > $('.box3').offset().top){
+          }else if((top-1.2*vh) > $('.box3').offset().top){
             $('#product3')[0].style.display='none';
             $('#product2')[0].style.display='block';
+            $('#product1')[0].style.display='none';
           }else{
             $('#product3')[0].style.display='none';
             $('#product2')[0].style.display='none';
@@ -338,19 +351,19 @@
           this.product1bg = 180 - ruler;
         }
         //  显示第2个学生作品
-        if((top-vh) > $('.box3').offset().top){
-          var ruler = GetPercent(((top-vh)-$('.box3').offset().top),79) >= 80 ?
-            80 : GetPercent(((top-vh)-$('.box3').offset().top),79)
+        if((top-1.2*vh) > $('.box3').offset().top){
+          var ruler = GetPercent(((top-1.2*vh)-$('.box3').offset().top),79) >= 80 ?
+            80 : GetPercent(((top-1.2*vh)-$('.box3').offset().top),79)
           this.product2bg = 180 - ruler;
         }
         //  显示第3个学生作品
-        if((top-2*vh) > $('.box3').offset().top){
-          var ruler = GetPercent(((top-2*vh)-$('.box3').offset().top),79) >= 100 ?
-            100 : GetPercent(((top-2*vh)-$('.box3').offset().top),79)
+        if((top-1.8*vh) > $('.box3').offset().top){
+          var ruler = GetPercent(((top-1.8*vh)-$('.box3').offset().top),79) >= 100 ?
+            100 : GetPercent(((top-1.8*vh)-$('.box3').offset().top),79)
           this.product3bg = 180 - ruler;
         }
         //第3个学生作品缩小向上 7130 - 7450
-        if( top > 7130 && top < 7834){
+        if( top > 7070 && top < 8000){
           console.log('cover up')
           this.product3Top = 7130 - top;
         }else{
@@ -414,6 +427,7 @@
 <style src="../utils/animate.css"></style>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  a{text-decoration: none;color: white;}
   video{display: block;}
   *{transition: all .31s;}
   .page{
@@ -533,5 +547,27 @@
   }
   .product3{
     background-image: url("../assets/images/product4.jpeg");
+  }
+  .jianzhang-warp{
+    height: 100vh;
+    position: relative;background: linear-gradient(10deg, #85c46b, #046eb8);
+  }
+  .jianzhang-warp .bg{
+    width: 100%;position: absolute;bottom: 0;left: 0;
+  }
+  .jianzhang-warp .hini{
+    background: none;position: absolute;left: 0%;top: 6%;color: white;letter-spacing: 4px;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .jianzhang-warp .hini2{
+    position: absolute;
+    display: inline-block;
+    background: #0e6dd0;color: white;padding: 20px;
+    bottom: 8%;right: 0;
+  }
+  .jianzhang-warp .hini2 h2{
+    font-size: 32px;
+    margin: 5px 0;
   }
 </style>
