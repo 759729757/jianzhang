@@ -352,14 +352,14 @@
         }
         //  显示第2个学生作品
         if((top-1.2*vh) > $('.box3').offset().top){
-          var ruler = GetPercent(((top-1.2*vh)-$('.box3').offset().top),50) >= 80 ?
-            80 : GetPercent(((top-1.2*vh)-$('.box3').offset().top),50)
+          var ruler = GetPercent(((top-1.2*vh)-$('.box3').offset().top),50+vh/2) >= 80 ?
+            80 : GetPercent(((top-1.2*vh)-$('.box3').offset().top),50+vh/2)
           this.product2bg = 180 - ruler;
         }
         //  显示第3个学生作品
         if((top-1.8*vh) > $('.box3').offset().top){
-          var ruler = GetPercent(((top-1.8*vh)-$('.box3').offset().top),50) >= 100 ?
-            100 : GetPercent(((top-1.8*vh)-$('.box3').offset().top),50)
+          var ruler = GetPercent(((top-1.8*vh)-$('.box3').offset().top),50+vh/2) >= 100 ?
+            100 : GetPercent(((top-1.8*vh)-$('.box3').offset().top),50+vh/2)
           this.product3bg = 180 - ruler;
         }
         //第3个学生作品缩小向上 7130 - 7450
