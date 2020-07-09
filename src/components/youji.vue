@@ -183,13 +183,10 @@
     <div class="section-full animate" id="kuawenhua"  data-ani="fadeIn">
       <swiper :options="swiperOption">
         <swiper-slide>
-          <img src="../assets/images/ketang.jpg" width="100%" alt="">
+          <img src="../assets/images/tiyan7.jpg" width="100%" alt="">
         </swiper-slide>
         <swiper-slide>
           <img src="../assets/images/tiyan1.jpg" width="100%" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../assets/images/tiyan2.jpg" width="100%" alt="">
         </swiper-slide>
         <swiper-slide>
           <img src="../assets/images/tiyan3.jpg" width="100%" alt="">
@@ -199,6 +196,9 @@
         </swiper-slide>
         <swiper-slide>
           <img src="../assets/images/tiyan4.jpg" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/tiyan6.jpg" width="100%" alt="">
         </swiper-slide>
       </swiper>
     </div>
@@ -211,7 +211,7 @@
          :style="'background-size:'+product1bg+'%'"
          id="product1" style="display: none;">
       <h2 class="author">
-        学生 徐焓涛 的作品
+        学生 徐焓涛 的2.5D海报作品
       </h2>
     </div>
 <!--    第二个学生作品-->
@@ -219,7 +219,7 @@
          :style="'background-size:'+product2bg+'%'"
          id="product2" style="display: none;">
       <h2 class="author">
-        学生 谢璐冰 的作品
+        学生袁飒莹，金语嫣，江思源的作品 <br>《奇遇》
       </h2>
     </div>
     <!--    第二个学生作品-->
@@ -227,7 +227,7 @@
          :style="'background-size:'+product3bg+'%;top:'+product3Top+'px'"
          id="product3" style="display: none;">
       <h2 class="author">
-        学生 成树 的作品
+        学生 成树 的海报拼贴作品
       </h2>
     </div>
 <!--    <div id="productCover" style="height: 15vh;"></div>-->
@@ -266,15 +266,6 @@
           </a>
       </span>
       </div>
-
-
-
-<!--      <div class="hini2">-->
-<!--          <h2>-->
-<!--            2020年招生介绍-->
-<!--          </h2>-->
-<!--          INTRODUCTION OF 2020 ENROLLMENT-->
-<!--      </div>-->
     </div>
 
 
