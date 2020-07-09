@@ -175,17 +175,37 @@
     </div>
     <div class="sections part1 text-xlg white-bg" >
       <span class="text-gradient animate" data-ani="fadeInUp">
-       关于教学初体验，<br>
+       教学初体验，<br>
        感受跨文化交流
       </span>
     </div>
     <!-- 教学初体验，<br> 感受跨文化交流  -->
-    <div class="section-full" id="kuawenhua">
-      <img src="../assets/images/ketang.jpg" width="100%" style="display: block;" class="animate" data-ani="fadeIn"  alt="">
-
+    <div class="section-full animate" id="kuawenhua"  data-ani="fadeIn">
+      <swiper :options="swiperOption">
+        <swiper-slide>
+          <img src="../assets/images/ketang.jpg" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/tiyan1.jpg" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/tiyan2.jpg" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/tiyan3.jpg" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/tiyan5.jpg" width="100%" alt="">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../assets/images/tiyan4.jpg" width="100%" alt="">
+        </swiper-slide>
+      </swiper>
     </div>
 <!--    学生作品-->
-    <div class="box3"></div>
+    <div class="box3">
+      <div class="cover-half"></div>
+    </div>
 <!--    第1个学生作品-->
     <div class="product product1"
          :style="'background-size:'+product1bg+'%'"
@@ -246,6 +266,9 @@
           </a>
       </span>
       </div>
+
+
+
 <!--      <div class="hini2">-->
 <!--          <h2>-->
 <!--            2020年招生介绍-->
@@ -259,10 +282,28 @@
   </div>
 </template>
 <script>
+  // import swiper from 'swiper';
+  import {swiper,swiperSlide} from 'vue-awesome-swiper'
+
   export default {
     name: 'youji',
+    component:{
+      swiper
+    },
     data() {
       return {
+        swiperOption: {
+          autoplay: 1500,
+          // autoplayDisableOnInteraction: false,
+          loop: true,
+          effect : 'cube',
+          cubeEffect: {
+            slideShadows: true,
+            shadow: true,
+            shadowOffset: 100,
+            shadowScale: 0.6
+          },
+        },
         screenWidth:window.screen.width,
         screenHeight:window.screen.height,
         flag: true,
@@ -616,7 +657,7 @@
     background-image: url("../assets/images/product1.jpg");
   }
   .product2{
-    background-image: url("../assets/images/product3.jpg");
+    background-image: url("../assets/images/product5.jpg");
   }
   .product3{
     background-image: url("../assets/images/product4.jpeg");
@@ -667,6 +708,12 @@
       opacity: 0;
       transform: scale(1);
     }
+  }
+  .box3{
+    position: relative;
+  }
+  .cover-half{
+    height: 25vh;background: white;position: absolute;top: 0;left: 0;width: 100%;
   }
 
 </style>
