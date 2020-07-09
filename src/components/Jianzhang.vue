@@ -500,8 +500,8 @@
       this.$nextTick(() => {
         this.handleAnimate()//初始化第一次加载时在视口内就执行动画
         addEventListener('scroll', this.handleAnimate);
-      })
-
+      });
+      document.title='招生简章-浙江万里学院 中德设计与传播学院'
     },
     destroyed() {
       removeEventListener('scroll', this.handleAnimate);

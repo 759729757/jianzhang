@@ -1,13 +1,22 @@
 <template>
   <div class="page">
-    <div class="sections part1 text-xlg transition-no" :class="classScroll1" :style="'padding-top:'+scroll1+'vh;'">
-      <span class="text-gradient  ">
+    <div class="sections fixed-title part1 text-xlg transition-no" :class="classScroll1" :style="'top:'+scroll1+'vh;'">
+      <span class="text-gradient bili  ">
         云游万里中德 <br>
         从这里开始&nbsp;&nbsp;&nbsp;&nbsp;
       </span>
     </div>
+    <div style="height: 100vh;background-color: white;position: relative;z-index: 2;" >
+      <div class="sections done-title part1 text-xlg" >
+      <span class="text-gradient  ">
+        云游万里中德 <br>
+        从这里开始&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>
+      </div>
+    </div>
+
     <div class="section-full transition-no" >
-      <video class="animate" data-ani="fadeIn" poster=" " width="100%"
+      <video class="animate" data-ani="fadeIn" poster="../assets/images/xuanchuan.jpg" width="100%"
              controls>
         <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%873.mov" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
@@ -22,21 +31,24 @@
         学生第一学年、第二学年在浙江万里学院学习，第三学年、第四学年在国外合作大学学习，毕业可同时获得浙江万里学院本科学历证书、学士学位证书和国外合作大学学士学位证书。
       </p>
     </div>
-    <div class="black-bg sections scrolling" :class="classScroll2">
-      <p class="text-xlg">
-        什么是品牌？<br>
-        <span style="opacity: 0" id="scroll2-hini" >从这里找到答案</span>
-      </p>
+    <div id="pinpai">
+      <div class="black-bg sections scrolling" :class="classScroll2">
+        <p class="text-xlg">
+          什么是品牌？<br>
+          <span style="opacity: 0" id="scroll2-hini" >从这里找到答案</span>
+        </p>
+      </div>
+      <div class="black-bg sections done" :class="classScroll2">
+        <p class="text-xlg">
+          什么是品牌？<br>
+          从这里找到答案
+        </p>
+      </div>
     </div>
-    <div class="black-bg sections done" :class="classScroll2">
-      <p class="text-xlg">
-        什么是品牌？<br>
-        从这里找到答案
-      </p>
-    </div>
+
 <!--    第一个视频-->
     <div class="section-full">
-    <video class="animate" data-ani="fadeIn"  width="100%"
+    <video class="animate" data-ani="fadeIn" poster="../assets/images/class1.jpg" width="100%"
            controls>
       <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/Chapter%201.mp4" type="video/mp4">
       对不起；您的浏览器不支持HTML5视频
@@ -52,7 +64,7 @@
     </div>
     <!--    第二个视频-->
     <div class="section-full">
-    <video class="animate" data-ani="fadeIn" width="100%"
+    <video class="animate" data-ani="fadeIn" poster="../assets/images/class2.jpg" width="100%"
            controls>
       <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/class2.mp4" type="video/mp4">
       对不起；您的浏览器不支持HTML5视频
@@ -68,7 +80,7 @@
     </div>
     <!--    第3个视频-->
     <div class="section-full">
-    <video class="animate" data-ani="fadeIn"  width="100%"
+    <video class="animate" data-ani="fadeIn" poster="../assets/images/class3.jpg" width="100%"
            controls>
       <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/class3.mp4" type="video/mp4">
       对不起；您的浏览器不支持HTML5视频
@@ -82,20 +94,21 @@
         丽蒙-卡莉珊教授，德国品牌应用科学大学国际品牌传播系主任，拥有多年在德国、奥地利、中国等地的跨文化教学经验以及食品行业的市场营销经验，专注于跨文化、设计与感知、神经营销等领域的研究。  </p>
     </div>
 <!--    专业秘密一看就知-->
-    <div class="fixed-full flex-center text-center" style="opacity: 0;" id="zhuanye-warp">
-      <p class="text-gradient text-xlg abs " :class="biger1">
-        广告学
-        <br>2+2中德双学位
-      </p>
-      <p class="text-gradient text-xlg abs zhuanye2" :class="biger2">
-        会展经济与管理<br>2+2中德双学位
-      </p>
-      <p class="text-gradient text-xlg abs zhuanye3" :class="biger3">
-        视觉传达设计<br>2+2中德双学位
-      </p>
-    </div>
+    <!--<div class="fixed-full flex-center text-center" style="opacity: 0;" id="zhuanye-warp">-->
+      <!--<p class="text-gradient text-xlg abs " :class="biger1">-->
+        <!--广告学-->
+        <!--<br>2+2中德双学位-->
+      <!--</p>-->
+      <!--<p class="text-gradient text-xlg abs zhuanye2" :class="biger2">-->
+        <!--会展经济与管理<br>2+2中德双学位-->
+      <!--</p>-->
+      <!--<p class="text-gradient text-xlg abs zhuanye3" :class="biger3">-->
+        <!--视觉传达设计<br>2+2中德双学位-->
+      <!--</p>-->
+    <!--</div>-->
+    <!--<div style="margin-top: 100vh;"></div>-->
 
-    <div class="sections part1 animate" data-ani="zoomInUp" data-delay="200" style="opacity: 0;margin-top: 100vh;background: none;">
+    <div class="sections part1 animate" id="major" style="opacity: 0;background: none;">
       <p class="text-gradient text-xlg">
         这些专业秘密 ， <br>
         一键就知道
@@ -103,7 +116,7 @@
     </div>
 <!--广告学专业介绍-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn" width="100%"
+      <video class="animate" data-ani="fadeIn" poster="../assets/images/guanggaoxue.jpg" width="100%"
              controls>
         <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/guanggaoxue.MP4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
@@ -116,7 +129,7 @@
     </div>
     <!--会展经济与管理专业介绍视频-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn" width="100%"
+      <video class="animate" data-ani="fadeIn"  poster="../assets/images/huizhan.jpg" width="100%"
              controls>
         <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/huizhan.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
@@ -129,7 +142,7 @@
     </div>
     <!--视觉创达设计-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn"  width="100%"
+      <video class="animate" data-ani="fadeIn"   poster="../assets/images/shijue.jpg" width="100%"
              controls>
         <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/shichuan.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
@@ -149,7 +162,7 @@
     </div>
     <!--听他们说-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn" width="100%"
+      <video class="animate" data-ani="fadeIn"  poster="../assets/images/zhufu.jpg" width="100%"
              controls>
         <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/studentSay.mov" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
@@ -162,8 +175,8 @@
     </div>
     <div class="sections part1 text-xlg white-bg" >
       <span class="text-gradient animate" data-ani="fadeInUp">
-       听他们说，关于<br>
-       教学初体验，<br> 感受跨文化交流
+       关于教学初体验，<br>
+       感受跨文化交流
       </span>
     </div>
     <!-- 教学初体验，<br> 感受跨文化交流  -->
@@ -198,14 +211,14 @@
       </h2>
     </div>
 <!--    <div id="productCover" style="height: 15vh;"></div>-->
-    <div class="sections part1 text-xlg white-bg" >
+    <div class="sections part1 text-xlg white-bg" id="yuntandian">
       <span class="text-gradient animate" data-ani="fadeInUp">
        校园云探店
       </span>
     </div>
     <!--校园云探店-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn"  width="100%"
+      <video class="animate" data-ani="fadeIn" poster="../assets/images/tandian.png" width="100%"
              controls>
         <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/tandian.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
@@ -214,11 +227,11 @@
     <div class="sections ">
       <h3 class="">
         浙江万里学院校内餐饮选择多样，寝室楼附近有商业广场，每层（共三层）都有特色餐饮店，例如包子叔叔、张亮麻辣烫、开心花甲、台湾美食等。
-        <br>
+        <br><br>
         教学楼附近有瑞幸咖啡、罗森便利店和特色早餐店，今年年初，校内还新建了KFC和星巴克，附近还有一鸣鲜奶吧、COCO、古茗等店，是同学们早餐或下午茶的首选。
-        <br>
+        <br><br>
         本期云探店带大家参观去年新装修的万里餐厅。
-        <br>
+        <br><br>
         点击视频来观看吧！
       </h3>
     </div>
@@ -228,7 +241,7 @@
       <div class="sections hini text-xlg " >
         想要报考？ <br>
         <span class="animate" data-ani="zoomInLeft">
-          <a href="/jz">
+          <a href="/jz" class="click-text" >
             点击这里
           </a>
       </span>
@@ -277,21 +290,27 @@
         let dom = document.querySelectorAll(".animate");
 
         //第一部分
-        if((35 - GetPercent(top,this.screenHeight)/2 ) > 10){
+        if(top < (2*vh)/3){
           this.classScroll1 = 'scroll-1';
-          this.scroll1 = 35 + GetPercent(top,this.screenHeight)/2;
+          this.scroll1 = 50 - GetPercent(top,this.screenHeight)/2;
+
+          $('.done-title')[0].style.opacity=0;
+          $('.done-title')[0].style.fontSize='4em';
         }else{
           this.classScroll1 = 'scroll-1-done';
+          $('.done-title')[0].style.opacity=1;
+          $('.done-title')[0].style.fontSize='3em';
         }
+
           //第二部分
         // console.log(top);
         //控制“从这里找到答案”显示与否
-        if(top > 790){
-          $('#scroll2-hini')[0].style.opacity = GetPercent(top-790,60)+"%";
+        if(top > $('#pinpai').offset().top-vh/2){
+          $('#scroll2-hini')[0].style.opacity = GetPercent(top-($('#pinpai').offset().top-vh/2),135)+"%";
         }else{
           $('#scroll2-hini')[0].style.opacity =0;
         }
-        if(top > 850){
+        if(top > ($('#pinpai').offset().top-vh/3) ){
           $('.scroll-2.scrolling').hide();
           $('.scroll-2.done')[0].style.opacity = 1;
         }else{
@@ -299,39 +318,46 @@
           $('.scroll-2.done')[0].style.opacity = 0;
         }
 
-        //三个专业放大
-        if(top>1900){
-          $('#zhuanye-warp')[0].style.opacity = 1;
-        }else {
-          $('#zhuanye-warp')[0].style.opacity = 0;
-        }
+        // //三个专业
+        // if( top > $('#major').offset().top-1.5*vh ){
+        //   $('#zhuanye-warp')[0].style.opacity = 1;
+        // }else {
+        //   $('#zhuanye-warp')[0].style.opacity = 0;
+        // }
+        //
+        // console.log(top-$('#major').offset().top-1.5*vh,0.2*vh);
+        //
+        // //三个专业放大
+        // if(top > $('#major').offset().top-1.5*vh ){
+        //   this.biger1='biger1-don';
+        //   $('.zhuanye2')[0].style.opacity = GetPercent(top-$('#major').offset().top-1.5*vh,0.2*vh)+"%";;
+        // }else {
+        //   this.biger1='';
+        //   $('.zhuanye2')[0].style.opacity = 0;
+        // }
+        //
+        // if(top > $('#major').offset().top-1.35*vh){
+        //   this.biger2='biger2-don';
+        //   $('.zhuanye3')[0].style.opacity = 1;
+        // }else {
+        //   this.biger2='';
+        //   $('.zhuanye3')[0].style.opacity = 0;
+        // }
+        //
+        // if(top > $('#major').offset().top-1.25*vh){
+        //   this.biger3='biger3-don';
+        // }else {
+        //   this.biger3='';
+        // }
 
-        if(top>2360){
-          this.biger1='biger1-done';
-          $('.zhuanye2')[0].style.opacity = 1;
-        }else {
-          this.biger1='';
-          $('.zhuanye2')[0].style.opacity = 0;
-        }
-        if(top>2660){
-          this.biger2='biger2-done';
-          $('.zhuanye3')[0].style.opacity = 1;
-        }else {
-          this.biger2='';
-          $('.zhuanye3')[0].style.opacity = 0;
-        }
-        if(top>2960){
-          this.biger3='biger3-done';
-        }else {
-          this.biger3='';
-        }
+
 
         if(top>($('#kuawenhua').offset().top-vh)){
-          if((top-1.8*vh) > $('.box3').offset().top){
+          if((top-2*vh) > $('.box3').offset().top){
             $('#product3')[0].style.display='block';
             $('#product2')[0].style.display='none';
             $('#product1')[0].style.display='none';
-          }else if((top-1.2*vh) > $('.box3').offset().top){
+          }else if((top-vh) > $('.box3').offset().top){
             $('#product3')[0].style.display='none';
             $('#product2')[0].style.display='block';
             $('#product1')[0].style.display='none';
@@ -344,30 +370,31 @@
           $('#product1')[0].style.display='none';
         }
 
-        //  显示第一个学生作品
+        //  显示第一个学生作品JpM<M<M<M<M<mmkk
         if(top > ($('.box3').offset().top-vh/2)){
-          var ruler = GetPercent((top-$('.box3').offset().top),50+vh/2) >= 80 ?
-            80 : GetPercent((top-$('.box3').offset().top),50+vh/2)
+          var ruler = GetPercent((top-$('.box3').offset().top+vh/2),1.5*vh) >= 80 ?
+            80 : GetPercent((top-$('.box3').offset().top+vh/2),1.5*vh)
           this.product1bg = 180 - ruler;
         }
         //  显示第2个学生作品
-        if((top-1.2*vh) > $('.box3').offset().top){
-          var ruler = GetPercent(((top-1.2*vh)-$('.box3').offset().top),50) >= 80 ?
-            80 : GetPercent(((top-1.2*vh)-$('.box3').offset().top),50)
+        if((top-vh) > $('.box3').offset().top){
+          let _r = GetPercent(((top-vh)-$('.box3').offset().top),vh)
+          var ruler = _r >= 80 ?
+            80 : _r
           this.product2bg = 180 - ruler;
         }
         //  显示第3个学生作品
-        if((top-1.8*vh) > $('.box3').offset().top){
-          var ruler = GetPercent(((top-1.8*vh)-$('.box3').offset().top),50) >= 100 ?
-            100 : GetPercent(((top-1.8*vh)-$('.box3').offset().top),50)
+        if((top-2*vh) > $('.box3').offset().top){
+          var ruler = GetPercent(((top-vh)-$('.box3').offset().top),2*vh) >= 100 ?
+            100 : GetPercent(((top-vh)-$('.box3').offset().top),2*vh)
           this.product3bg = 180 - ruler;
         }
-        //第3个学生作品缩小向上 7130 - 7450
-        if( top > 7070 && top < 8000){
-          console.log('cover up')
-          this.product3Top = 7130 - top;
+        // //第3个学生作品缩小向上 7130 - 7450
+        if( top > ($('#yuntandian').offset().top-vh) && top < ( $('#yuntandian').offset().top )){
+          $('#product3')[0].style.backgroundAttachment = 'inherit';
+          this.product3Top = $('#yuntandian').offset().top -vh - top;
         }else{
-
+          $('#product3')[0].style.backgroundAttachment = 'fixed';
         }
 
 
@@ -402,7 +429,8 @@
       this.$nextTick(() => {
         this.handleAnimate()//初始化第一次加载时在视口内就执行动画
         addEventListener('scroll', this.handleAnimate);
-      })
+      });
+      document.title='云游万里中德-浙江万里学院 中德设计与传播学院'
 
     },
     destroyed() {
@@ -430,6 +458,21 @@
   a{text-decoration: none;color: white;}
   video{display: block;}
   *{transition: all .31s;}
+  .animate{
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;   /* Other transform properties here */
+  }
   .page{
     color: black;
   }
@@ -454,7 +497,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
   }
   .black-bg{
     background-color: black;color: white;
@@ -463,21 +505,52 @@
     padding-left: 8%;box-sizing: border-box;
   }
 
+  .fixed-title{
+    position: fixed;
+    z-index: 3;width: 100%;
+    box-sizing: border-box;
+  }
+  .text-gradient.bili{
+    animation: bgEngle 8s infinite;
+  }
+  @keyframes bgEngle {
+    from{
+      background-image: linear-gradient(125deg,#6fc07e,#0e6dd0);
+    }
+    30%{
+      background-image: linear-gradient(211deg,#6fc07e,#0e6dd0);
+    }
+    50%{
+      background-image: linear-gradient(305deg,#6fc07e,#0e6dd0);
+    }
+    80%{
+      background-image: linear-gradient(355deg,#6fc07e,#0e6dd0);
+    }
+    to{
+      background-image: linear-gradient(125deg,#6fc07e,#0e6dd0);
+    }
+  }
+
 /*  滚动的样式 */
   .scroll-1{
     /*transform: translate(0%,-50%);*/
     zoom: 1;
-    padding-top: 35vh;
-    text-align: center;
+    text-align: left;
     font-size: 4em;
     white-space: nowrap;
-
+    transform: translateY(-50%);
   }
-  .scroll-1+div{padding-top: 100%;}
+
   .scroll-1-done{
-    position: relative;
-    /*transform:translate(0%,-50%);*/
-    font-size: 3em;
+    display: none;
+  }
+  .done-title{
+    opacity: 0;
+    font-size: 4em;
+    transition: font-size .2s ease-out;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
   }
 
   .scroll-2{
@@ -528,16 +601,16 @@
     animation: fadeInUp .5s ease-out;
   }
 
-  .box3{width: 100%;height: 300vh;}
+  .box3{width: 100%;height: 400vh;}
   .product{
     width: 100%;position: fixed;left: 0;top: 0;z-index: -1;
     height: 100vh;background-color: black;
     background-position: center;background-size: 150%;background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     transition: all 0s;
   }
   .author{
-    position: absolute;left: 6%;color: white;bottom: 6vh;
+    position: absolute;left: 6%;color: white;bottom: 3vh;
   }
   .product1{
     background-image: url("../assets/images/product1.jpg");
@@ -570,4 +643,30 @@
     font-size: 32px;
     margin: 5px 0;
   }
+  .click-text{
+    position: relative;display: inline-block;
+  }
+  .click-text:after{
+    content: " ";position: absolute;
+    right: -15px;bottom: -7px;
+    width: 35px;height: 35px;background-size: cover;
+    background-image: url("../assets/images/click.png");
+    opacity: .5;
+    animation:flash2 1s infinite ease-out;
+  }
+  @keyframes flash2{
+    from{
+      opacity: 0;
+      transform: scale(1);
+    }
+    50%{
+      opacity: .2;
+      transform: scale(1.2);
+    }
+    to{
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+
 </style>

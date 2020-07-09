@@ -19,7 +19,7 @@ export default {
   color: #fff;
   margin-top: 0;
 }
-.transition-no{transition:all 0s;}
+.transition-no{transition:all 0s!important;}
   body{
     margin: 0;font-size: 12px;
   }

@@ -127,6 +127,9 @@
 .fadeIn{
   animation: fadeIn 1s ease-in;
 }
+.flash{
+  animation:flash 2s infinite;
+}
 
 
 
