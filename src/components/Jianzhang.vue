@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--    第一页-->
-    <div class="sections sections-full page1">
+    <div class="sections sections-full page1" id="top">
       <img class="animate bg" data-ani="fadeIn" src="../assets/images/page1.png" alt="">
       <img class="logo animate" data-ani="zoomInRight" src="../assets/images/logo.png" alt="">
       <p class="describe animate " data-ani="fadeInUpBig" data-delay="1000">浙江万里学院与德国品牌应用科学大学合作举办中德设计与传播学院，共同开设视觉传达设计专业、 广告学专业、会展经济与管理专业 2+2 中德双学位专业（英语授课），与美国纽约州立大学 普拉茨堡分校、新西兰马努卡理工学院、美国普莱斯比学院、法国东部克雷戴尔大学、英国赫特福德大学、英国南威尔士大学合作开设国际经济与贸易2+2 中外双学位专业。<br><br>学生第一学年、第二学年在浙江万里学院学习，第三学年、第四学年在国外合作大学学习，毕业可同时获得浙江万里学院本科学历证书、学士学位证书和国外合作大学学士学位证书。</p>
@@ -396,10 +396,8 @@
         let top = pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
         let vh = document.documentElement.clientHeight;
         let dom = document.querySelectorAll(".animate");
-        console.log($('.animate'));
         [].slice.call(dom).forEach(v => {
-          console.log(top, vh, $(v).offset().top);
-          if ((top + vh) > $(v).offset().top) {
+          if ((top + vh) >= $(v).offset().top) {
             var delay = v.dataset.delay;
             if (delay) {
               setTimeout(() => {
@@ -419,11 +417,18 @@
 
     },
     mounted() {
+      document.documentElement.scrollTop = 2;
       this.$nextTick(() => {
         this.handleAnimate()//初始化第一次加载时在视口内就执行动画
         addEventListener('scroll', this.handleAnimate);
       });
+      // window.scrollTo(0,1);
       document.title='招生简章-浙江万里学院 中德设计与传播学院'
+    },
+    created(){
+      setTimeout(()=>{
+        this.handleAnimate();
+      },1100)
     },
     destroyed() {
       removeEventListener('scroll', this.handleAnimate);
@@ -501,18 +506,16 @@
   }
 
   .page1 {
-    padding-top: 100px;
+    padding-top: 20vh;height: 100vh;box-sizing: border-box;position: relative;
     background: linear-gradient(10deg, #85c46b, #046eb8);
   }
 
   .page1 .bg {
-    display: block;
+    display: block;position: absolute;left: 0;bottom: 0;
   }
 
   .page1 .describe {
-    position: absolute;
-    left: 5%;
-    top: 15%;
+    margin: auto;position: relative;
     z-index: 2;
     width: 90%;
   }
@@ -521,18 +524,18 @@
     position: absolute;
     width: 14%;
     bottom: 5%;
-    left: 5%;
+    right: 5%;
     transition: all .65s;
   }
 
   .qrcode:last-child {
-    left: 22%;
+    right: 22%;
   }
 
   .qrcode:hover {
     width: 70%;
     z-index: 99;
-    left: 15%;
+    right: 15%;
   }
 
   .page2 {

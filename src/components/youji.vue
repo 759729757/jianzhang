@@ -108,7 +108,7 @@
     <!--</div>-->
     <!--<div style="margin-top: 100vh;"></div>-->
 
-    <div class="sections part1 animate" id="major" style="opacity: 0;background: none;">
+    <div class="sections part1 animate" id="major" style="opacity: 0;">
       <p class="text-gradient text-xlg">
         这些专业秘密 ， <br>
         一键就知道
@@ -180,7 +180,7 @@
       </span>
     </div>
     <!-- 教学初体验，<br> 感受跨文化交流  -->
-    <div class="section-full animate" id="kuawenhua"  data-ani="fadeIn">
+    <div class="section-full" id="kuawenhua" >
       <swiper :options="swiperOption">
         <swiper-slide>
           <img src="../assets/images/tiyan7.jpg" width="100%" alt="">
@@ -205,40 +205,54 @@
 <!--    学生作品-->
     <div class="box3">
       <div class="cover-half"></div>
+      <!--    第1个学生作品-->
+      <div class="product product1"
+           :style="'background-size:'+product1bg+'%'"
+           id="product1" style="display: none;">
+        <h2 class="author">
+          学生 徐焓涛 的2.5D海报作品
+        </h2>
+      </div>
+      <!--    第二个学生作品-->
+      <div class="product product2"
+           :style="'background-size:'+product2bg+'%'"
+           id="product2" style="display: none;">
+        <h2 class="author">
+          学生袁飒莹，金语嫣，江思源的作品 <br>《奇遇》
+        </h2>
+      </div>
+      <!--    第3个学生作品-->
+      <div class="product product3"
+           :style="'background-size:'+product3bg+'%;'"
+           id="product3" style="display: none;">
+        <h2 class="author">
+          学生 成树 的海报拼贴作品
+        </h2>
+      </div>
+
     </div>
-<!--    第1个学生作品-->
-    <div class="product product1"
-         :style="'background-size:'+product1bg+'%'"
-         id="product1" style="display: none;">
-      <h2 class="author">
-        学生 徐焓涛 的2.5D海报作品
-      </h2>
+
+    <!--更多的作品-->
+    <div class="product-cover" id="product-cover">
+      <div class="product-warp" id="product-warp">
+        <!--<img src="../assets/images/product2.jpg" class="pdc" alt="">-->
+        <img src="../assets/images/product8.jpg" class="pdc" alt="">
+        <img src="../assets/images/product6.jpg" class="pdc" alt="">
+        <img src="../assets/images/product7.jpg" class="pdc" alt="">
+        <img src="../assets/images/product9.jpg" class="pdc" alt="">
+        <img src="../assets/images/product3.jpg" class="pdc" alt="">
+      </div>
     </div>
-<!--    第二个学生作品-->
-    <div class="product product2"
-         :style="'background-size:'+product2bg+'%'"
-         id="product2" style="display: none;">
-      <h2 class="author">
-        学生袁飒莹，金语嫣，江思源的作品 <br>《奇遇》
-      </h2>
-    </div>
-    <!--    第二个学生作品-->
-    <div class="product product3"
-         :style="'background-size:'+product3bg+'%;top:'+product3Top+'px'"
-         id="product3" style="display: none;">
-      <h2 class="author">
-        学生 成树 的海报拼贴作品
-      </h2>
-    </div>
+
 <!--    <div id="productCover" style="height: 15vh;"></div>-->
     <div class="sections part1 text-xlg white-bg" id="yuntandian">
-      <span class="text-gradient animate" data-ani="fadeInUp">
+      <span class="text-gradient" >
        校园云探店
       </span>
     </div>
     <!--校园云探店-->
     <div class="section-full">
-      <video class="animate" data-ani="fadeIn" poster="../assets/images/tandian.png" width="100%"
+      <video  poster="../assets/images/tandian.png" width="100%"
              controls>
         <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/tandian.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
@@ -256,14 +270,14 @@
       </h3>
     </div>
     <div class="jianzhang-warp">
-      <img class="animate bg" data-ani="fadeIn" src="../assets/images/page1.png" alt="">
+      <img class="bg" src="../assets/images/page1.png" alt="">
 
       <div class="sections hini text-xlg " >
         想要报考？ <br>
-        <span class="animate" data-ani="zoomInLeft">
-          <a href="/jz" class="click-text" >
-            点击这里
-          </a>
+        <span class="">
+          <router-link to="/#top" class="click-text">
+               点击这里
+          </router-link>
       </span>
       </div>
     </div>
@@ -335,7 +349,6 @@
         }
 
           //第二部分
-        // console.log(top);
         //控制“从这里找到答案”显示与否
         if(top > $('#pinpai').offset().top-vh/2){
           $('#scroll2-hini')[0].style.opacity = GetPercent(top-($('#pinpai').offset().top-vh/2),135)+"%";
@@ -357,7 +370,6 @@
         //   $('#zhuanye-warp')[0].style.opacity = 0;
         // }
         //
-        // console.log(top-$('#major').offset().top-1.5*vh,0.2*vh);
         //
         // //三个专业放大
         // if(top > $('#major').offset().top-1.5*vh ){
@@ -404,29 +416,50 @@
 
         //  显示第一个学生作品JpM<M<M<M<M<mmkk
         if(top > ($('.box3').offset().top-vh/2)){
-          var ruler = GetPercent((top-$('.box3').offset().top+vh/2),1.5*vh) >= 80 ?
-            80 : GetPercent((top-$('.box3').offset().top+vh/2),1.5*vh)
+          let _r =GetPercent((top-$('.box3').offset().top+vh/2),1.5*vh);
+          var ruler = _r >= 80 ? 80 : _r;
           this.product1bg = 180 - ruler;
         }
         //  显示第2个学生作品
         if((top-vh) > $('.box3').offset().top){
           let _r = GetPercent(((top-vh)-$('.box3').offset().top),vh)
-          var ruler = _r >= 80 ?
-            80 : _r
+          var ruler = _r >= 80 ? 80 : _r;
           this.product2bg = 180 - ruler;
         }
         //  显示第3个学生作品
         if((top-2*vh) > $('.box3').offset().top){
-          var ruler = GetPercent(((top-vh)-$('.box3').offset().top),2*vh) >= 100 ?
-            100 : GetPercent(((top-vh)-$('.box3').offset().top),2*vh)
+          let _r = GetPercent(((top-vh)-$('.box3').offset().top),2*vh)
+          var ruler = _r >= 100 ? 100 : _r;
           this.product3bg = 180 - ruler;
         }
         // //第3个学生作品缩小向上 7130 - 7450
         if( top > ($('#yuntandian').offset().top-vh) && top < ( $('#yuntandian').offset().top )){
-          $('#product3')[0].style.backgroundAttachment = 'inherit';
-          this.product3Top = $('#yuntandian').offset().top -vh - top;
+          // $('#product3')[0].style.backgroundAttachment = 'inherit';
+          $('#product3')[0].style.position = 'absolute';
+          // this.product3Top = $('#yuntandian').offset().top -vh - top;
         }else{
-          $('#product3')[0].style.backgroundAttachment = 'fixed';
+          $('#product3')[0].style.position = 'fixed';
+          // $('#product3')[0].style.backgroundAttachment = 'fixed';
+        }
+
+        //更多学生作品
+        if(top > ($('#product-cover').offset().top)){
+        //  固定学生作品到屏幕
+          var pdc = $('.pdc'),l = pdc.length;//拿到元素先
+
+          $('#product-warp')[0].style.position = 'fixed';
+          if(top > ($('#product-cover').offset().top+vh)){
+          //  为元素开始做动画
+            var i = Math.floor((top-$('#product-cover').offset().top-vh)/vh);//为第几个元素做效果
+            var left = GetPercent( top-$('#product-cover').offset().top-vh-i*vh,vh);
+            console.log(left);
+            if(l-1-i <= 0){return}
+            $(pdc)[l-1-i].style.left = 10+left+'%';
+
+          }
+        }else{
+          //  取消固定学生作品到屏幕
+          $('#product-warp')[0].style.position = 'relative';
         }
 
 
@@ -435,7 +468,6 @@
 
         //为animate元素添加动画
           [].slice.call(dom).forEach(v => {
-          // console.log(top, vh, $(v).offset().top);
           if ((top + vh) > $(v).offset().top) {
             var delay = v.dataset.delay;
             if (delay) {
@@ -515,7 +547,8 @@
     padding: 8%;
   }
   .sections-sm{
-    padding: 3% 8%;background: white;
+    padding: 3% 8%;background: white;position: relative;
+    z-index: 2;
   }
   .content-text{
     font-size: 12px;line-height: 22px;margin: 0;
@@ -531,7 +564,8 @@
     color: transparent;
   }
   .black-bg{
-    background-color: black;color: white;
+    background-color: black;color: white;position: relative;
+    z-index: 2;
   }
   .title-warp{
     padding-left: 8%;box-sizing: border-box;
@@ -635,10 +669,11 @@
 
   .box3{width: 100%;height: 400vh;}
   .product{
-    width: 100%;position: fixed;left: 0;top: 0;z-index: -1;
+    width: 100%;position: fixed;left: 0;
+    bottom: 0;z-index: 1;
     height: 100vh;background-color: black;
     background-position: center;background-size: 150%;background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     transition: all 0s;
   }
   .author{
@@ -651,10 +686,10 @@
     background-image: url("../assets/images/product5.jpg");
   }
   .product3{
-    background-image: url("../assets/images/product4.jpeg");
+    background-image: url("../assets/images/product4.jpg");
   }
   .jianzhang-warp{
-    height: 100vh;
+    height: 100vh;z-index: 2;
     position: relative;background: linear-gradient(10deg, #85c46b, #046eb8);
   }
   .jianzhang-warp .bg{
@@ -705,6 +740,17 @@
   }
   .cover-half{
     height: 25vh;background: white;position: absolute;top: 0;left: 0;width: 100%;
+    z-index: 2;
   }
 
+  .product-cover{
+    width: 100%;height: 600vh;position: relative;z-index: 1;left: 0;top: 0;
+  }
+  .product-warp{
+    width: 100%;height: 600vh;background: black;position: relative;z-index: 1;left: 0;top: 0;
+  }
+  .pdc{
+    position: absolute;width: 80%;left: 10%;
+    top: 50vh;transform: translateY(-50%);
+  }
 </style>

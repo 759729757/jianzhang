@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view/>
+    <transition name="no-mode-translate-fade">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -18,6 +20,7 @@ export default {
   text-align: left;
   color: #fff;
   margin-top: 0;
+
 }
 .transition-no{transition:all 0s!important;}
   body{
@@ -30,4 +33,24 @@ export default {
   .abs{
     position: absolute;
   }
+
+.no-mode-translate-demo-wrapper {
+  position: relative;
+  height: 18px;
+}
+.no-mode-translate-demo-wrapper button {
+  position: absolute;
+}
+.no-mode-translate-fade-enter-active, .no-mode-translate-fade-leave-active {
+  transition: all 1s;
+}
+.no-mode-translate-fade-enter, .no-mode-translate-fade-leave-active {
+  opacity: 0;
+}
+.no-mode-translate-fade-enter {
+  transform: translateX(100%);
+}
+.no-mode-translate-fade-leave-active {
+  transform: translateX(-100%);
+}
 </style>
