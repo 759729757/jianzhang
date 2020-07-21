@@ -6,15 +6,22 @@ import router from './router'
 import $ from 'jquery'
 import animate from 'animate.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/swiper-bundle.css'
 
 // import 'swiper/css/swiper.css'
 // If you use Swiper 6.0.0 or higher
-import 'swiper/swiper-bundle.css'
-import './assets/swiper.css';
+// import './assets/swiper.css';
 
 Vue.config.productionTip = false
 Vue.use(animate);
-Vue.use(VueAwesomeSwiper)
+Vue.use(VueAwesomeSwiper,{
+  autoplay: {
+    delay:1500,
+    disableOnInteraction:false,
+  },
+  // autoplayDisableOnInteraction: false,
+  loop: true,
+})
 
 /* eslint-disable no-new */
 new Vue({

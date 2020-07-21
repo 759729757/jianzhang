@@ -5,6 +5,15 @@
       <img class="animate bg" data-ani="fadeIn" src="../assets/images/page1.png" alt="">
       <img class="logo animate" data-ani="zoomInRight" src="../assets/images/logo.png" alt="">
       <p class="describe animate " data-ani="fadeInUpBig" data-delay="1000">浙江万里学院与德国品牌应用科学大学合作举办中德设计与传播学院，共同开设视觉传达设计专业、 广告学专业、会展经济与管理专业 2+2 中德双学位专业（英语授课），与美国纽约州立大学 普拉茨堡分校、新西兰马努卡理工学院、美国普莱斯比学院、法国东部克雷戴尔大学、英国赫特福德大学、英国南威尔士大学合作开设国际经济与贸易2+2 中外双学位专业。<br><br>学生第一学年、第二学年在浙江万里学院学习，第三学年、第四学年在国外合作大学学习，毕业可同时获得浙江万里学院本科学历证书、学士学位证书和国外合作大学学士学位证书。</p>
+
+      <div class="back-btn animate" data-ani="rotateInUpLeft" data-delay="3500" >
+        <a href="#/youji">
+          <img src="../assets/images/back.png" width="50" >
+        </a>
+        <span >
+          云游万里
+        </span>
+      </div>
       <img class="qrcode animate" data-ani="rotateInUpRight" data-delay="2500" src="../assets/images/qqcode.png" alt="">
       <img class="qrcode animate" data-ani="rotateInUpRight" data-delay="2500" src="../assets/images/wccode.png" alt="">
     </div>
@@ -15,7 +24,7 @@
       <p class="subTitle animate" data-ani="fadeInDown">Major Introduction</p>
       <video class="animate" data-ani="fadeInLeft" data-delay="600" poster="../assets/images/video5.png" width="100%"
              controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video5.mp4" type="video/mp4">
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/%E5%AE%A3%E4%BC%A0%E7%89%8710.mov" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
 
@@ -27,9 +36,9 @@
         每个优秀的品牌需要精美的外观，高品质的视觉设计可以激发人们的购买欲。视觉传达设计2+2 中德双学位专业后段对接德国品牌应用科学大学的品牌设计专业，两校共同培养具备以品牌为核心的综合视觉设计能力，国际化跨媒介的品牌设计师。通过学习和训练，学生将成为品牌设计的专业人才，在日益国际化的环境中具有较强的适应能力和广阔的发展空间。<br><br>
         就业前景：毕业生将能够在国内外品牌设计公司、广告公司、策划公司、平面设计公司、互联网公司、互动媒体公司、活动公关公司、出版社、报社、电视台独立承担品牌设计师、设计总计总监、视觉设计总监、包装设计师、广告设计师、广告公司艺术指导、艺术总监、互动媒体设计师、网站设计师、界面设计师等职位。
       </p>
-      <video class="animate" data-ani="fadeInLeft" data-delay="600" poster="../assets/images/video1.jpg" width="100%"
+      <video class="animate" data-ani="fadeInLeft" data-delay="600" poster="../assets/images/shichuan.png" width="100%"
              controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video1.mp4" type="video/mp4">
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/shichuan.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
 
@@ -42,8 +51,9 @@
         就业前景：毕业生将能够在国内外广告公司、企业品牌运营部门、新闻媒介广告部门、市场调查及信息咨询行业、事业单位广告经营部门担任品牌总监、市场调研经理、市场营销经理、品牌策划师、活动策划师、广告文案师、广告创意总监、公关策划师、媒介策划师、媒体公关经理、数字营销师、客户总监等职位。
       </p>
       <video class="animate" data-ani="fadeInLeft" data-delay="600"
-             poster="../assets/images/video2.jpg" width="100%" controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video2.MP4" type="video/mp4">
+             style="display: block!important;"
+             poster="../assets/images/guanggaoxue.png" width="100%" controls>
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/guanggaoxue.MP4" type="video/MP4">
         对不起；您的浏览器不支持HTML5视频
       </video>
 
@@ -60,8 +70,8 @@
         就业前景：毕业生将能够在政府机构、会展行业协会和会展专业组织，从事会展调研、行业规划、研究与管理工作；在会展公司及会展服务公司，从事会展策划、公关、设计、制作、现场运营管理工作。毕业生还能够在国内外各大企业担任品牌总监、客户总监、市场调研经理、市场营销经理、设计管理经理、媒体公关经理、数字营销经理等职位。
       </p>
       <video class="animate" data-ani="fadeInLeft" data-delay="600"
-             poster="../assets/images/video3.jpg" width="100%" controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video3.mp4" type="video/mp4">
+             poster="../assets/images/huizhan.png" width="100%" controls>
+        <source src="https://wanli-files.oss-cn-hangzhou.aliyuncs.com/huizhan.mp4" type="video/mp4">
         对不起；您的浏览器不支持HTML5视频
       </video>
 
@@ -73,11 +83,6 @@
         我国的世界经济大国地位日益巩固，在国际贸易中扮演的角色越来越重要，亟需精通国际经济与贸易的精英人才。国际经济与贸易2+2中外双学位专业后段对接欧洲、北美洲、澳洲等多所大学的对应专业，共同培养具有了解现代国际经济与贸易环境和发展现状，熟悉通行的国际贸易规则、法律与惯例，具有国际视野、创新和开拓精神的应用型国际经贸人才。<br><br>
         就业前景：对外贸易及相关领域的行政管理、教学和科研部门以及外贸企业、外资企业、跨国公司、拥有外贸经营权的企业和其他涉外经贸部门；国内外银行与非银行金融机构从事经营管理工作；驻外商务机构以及海外驻华商务机构的国际贸易与金融的从事相关经营管理工作；在工商企业从事国际贸易、金融投资、市场营销、电子商务、国际物流等工作。
       </p>
-      <video class="animate" data-ani="fadeInLeft" data-delay="600"
-             poster="../assets/images/video4.jpg" width="100%" controls>
-        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video4.mp4" type="video/mp4">
-        对不起；您的浏览器不支持HTML5视频
-      </video>
 
       <br><br><br><br>
 
@@ -133,7 +138,12 @@
           学生在国外学习期间，可申请进入合作院校的实践教学基地。在企业导师带领下与不同国家学生共同完成商业专业，提高专业能力、跨文化交际能力与合作能力。
         </p>
       </div>
-
+      <br>      <br><br>
+      <video class="animate" data-ani="fadeInLeft" data-delay="600"
+             poster="../assets/images/video4.jpg" width="100%" controls>
+        <source src="https://zhaoshengjianzhang.oss-cn-shenzhen.aliyuncs.com/video4.mp4" type="video/mp4">
+        对不起；您的浏览器不支持HTML5视频
+      </video>
     </div>
     <div class="sections page3">
       <h2 class="title animate" data-ani="fadeInDown">招生计划及学制</h2>
@@ -146,12 +156,12 @@
         </tr>
         <tr class="title">
           <td>"三位一体" <br> 招生计划</td>
-          <td>30 <br>（普通类）</td>
+          <td>20 <br>（普通类）</td>
           <td>30</td>
         </tr>
         <tr class="title ">
           <td>高考统招<br>计划</td>
-          <td>60 <br>（艺术类）</td>
+          <td>70 <br>（艺术类）</td>
           <td>60</td>
         </tr>
         <tr class="title ">
@@ -423,7 +433,7 @@
         addEventListener('scroll', this.handleAnimate);
       });
       // window.scrollTo(0,1);
-      document.title='招生简章-浙江万里学院 中德设计与传播学院'
+      document.title='招生介绍-浙江万里学院 中德设计与传播学院'
     },
     created(){
       setTimeout(()=>{
@@ -452,7 +462,37 @@
   html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: none;
   }
-
+.back-btn{
+  position: absolute;
+  left: 6%;
+  bottom: 5%;
+}
+  .back-btn img{
+    margin-right: 5px;vertical-align: middle;
+    animation: shakeIcon 1s infinite linear;
+  }
+  .back-btn span{
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #000;
+  }
+  @keyframes shakeIcon {
+    from{
+      transform: rotate(0);
+    }
+    10%{
+      transform: rotate(10deg);
+    }
+    20%{
+      transform: rotate(-10deg);
+    }
+    30%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
   .sections {
     position: relative;
     padding: 5%;
